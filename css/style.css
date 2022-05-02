@@ -1,0 +1,38 @@
+/* body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#000000, #29769d);
+    width: 100vw;
+} */
+
+/* nav { 
+    position: fixed;
+    height: 6.5rem;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    vertical-align: middle;
+    box-shadow:  15px 15px 46px #000000,
+    -15px -15px 46px #000000;
+    z-index: 2;
+    width:100vw;
+} */
+
+
+ .gallery-container{
+    display: flex;
+    position: relative;
+    padding: 1rem;
+}
+
+.gallery-element{
+    display: block; 
+    position:relative
+    height: 5rem;
+    width: 5rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 0.5rem;
+}
