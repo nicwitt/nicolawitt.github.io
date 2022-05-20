@@ -1,9 +1,35 @@
+/* -------------------ROOT------------------- */
+html{
+
+}
+
 :root{
     font-family: 'Helvetica', sans-serif;
     color: white;
 
     --xl-text: 7.0rem;
-    --l-text: 2.0rem
+    --l-text: 2.0rem;
     --regular-text: 1.7rem;
     --s-text: 1.5rem;
 }
+
+/* -------------------IMPORTED FONT------------------- */
+
+
+/* -------------------HEADER PRESETS------------------- */
+
+/* HEADING */
+h1{}
+
+/* SUB-HEADING */
+
+h2{}
+
+/* PRODUCT NAMES */
+
+h3{}
+
+/* HYPERLINKS */
+
+a{}
+
