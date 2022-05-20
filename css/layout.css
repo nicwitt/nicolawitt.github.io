@@ -1,7 +1,20 @@
-/* -------------------ROOT-------------------*/
+/* -------------------MAIN-------------------*/
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
 
 :root {
 
+}
+
+.main-content{
+    background-color: black;
+    height: calc(100vh - 8rem);
+    flex: 4;
 }
 
 body{
@@ -11,6 +24,7 @@ body{
 img{
 
 }
+
 
 /* -------------------NAVIGATION BAR------------------- */
 /* NAV BAR LAYOUT */
@@ -38,6 +52,13 @@ img{
 
 
 /* -------------------SIDE NAV------------------- */
+
+.sidebar{
+    background-color: black;
+    height: calc(100vh - 8rem);
+    flex: 1;
+}
+
 /* TEXT LAYOUT */
 
 
@@ -83,6 +104,13 @@ img{
 
 /* BEST SELLERS */
 
+.img-gallery{
+
+}
+
+.img-card{
+
+}
 
 /* NEW ARRIVALS */
 
@@ -121,6 +149,8 @@ img{
 
 
 /* -------------------ADD TO CART ANNOUNCEMENT------------------- */
+
+
 /* HEADER */
 
 /* EXIT ICON */
@@ -171,11 +201,23 @@ img{
 
 /* TITLE */
 
+.text-center{
+
+}
+
 /* PRODUCT IMAGES */
 
 /* PRODUCT INFORMATION */
 
+.text-left{
+
+}
+
 /* PRODUCT PRICE */
+
+.text-right{
+
+}
 
 /* END INFORMATION */
 
