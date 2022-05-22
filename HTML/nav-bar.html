@@ -5,33 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Navbar</title>
 </head>
 
 <body>
-    <!-- -------NAVBAR--------     -->
-    <nav class="stack">
-        <!-- -------TOP CLUSTER--------  -->
-        <div class="nav__navigation nav-top cluster">
+<!-- ----------------------NAVBAR----------------------- -->
 
-            <!-- ---MENU--- -->
-            <ul class="nav__left cluster">
-                <li><a class="nav-link" href="#">Menu</a></li>
-            </ul>
-
-            <!-- ---LOGO--- -->
-            <img src="/images/nav-logo.png" alt=logo class="logo">
-            
-            <!-- ---SEARCH & CART--- -->
-            <ul class="nav__right cluster">
-                <li><a class="nav-link" href="#">Search</a></li>
-                <li><a class="nav-link" href="#">Cart</a></li>
-            </ul>
-        </div>
-
-        <!-- -------BOTTOM CLUSTER--------  -->
-        <div class="nav__navigation nav-bottom cluster">
-            <ul class="categories__dropdown cluster">
+      <nav class="nav__navigation cluster">
+        <ul class="nav__left cluster">
+            <li><a class="nav-link" href="#">Menu</a>
+                <ion-icon name="menu-outline"></ion-icon>
+            </li>
+        </ul>
+        <img src="/images/nav-logo.png" alt=logo class="logo">
+        <ul class="nav__right cluster">
+            <li><a class="nav-link" href="#">Search</a>
+                <ion-icon name="search-outline"></ion-icon>
+            </li>
+            <li><a class="nav-link" href="#">Cart</a>
+                <ion-icon name="cart-outline"></ion-icon>
+            </li>
+        </ul>
+        <div class="categories__dropdown cluster">
+            <ul class="nav-link">
                 <li><a class="nav-link" href="#">Guitars</a>
                     <ion-icon name="chevron-down-outline"></ion-icon>
                 </li>
@@ -55,6 +51,7 @@
                 </li>
             </ul>
         </div>
+
     </nav>
 
 </body>

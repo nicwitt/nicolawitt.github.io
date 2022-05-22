@@ -5,3 +5,47 @@
     --myBlueLight: #2F7493; 
     --myBlueDark: #0F3A43; 
 }
+
+/* -------------------MAIN-------------------*/
+body{
+    background: rgb(0,0,0) !important;
+    background: linear-gradient(120deg, rgba(0,0,0,1) 0%, rgba(6,25,29,1) 77%, rgba(19,85,99,1) 92%, rgba(34,150,175,1) 100%) !important;
+    color: var(--white);
+}
+
+/* -------------------NAVBAR-------------------*/
+
+/* NAVMAIN */
+nav{
+    background-color: black;
+    opacity: 90%;
+}
+
+nav a{
+    color: var(--white);
+}
+
+/* NAV DROPDOWN */
+nav .drop-down{
+    background-color: black;
+    opacity: 70%;
+}
+
+/* -------------------SIDENAV-------------------*/
+
+body{
+    background: linear-gradient(black), var(--myBlueLight);
+}
+
+/* -------------------BODY-------------------*/
+
+body{
+    background: linear-gradient(black), var(--myBlueLight);
+}
+
+
+/* -------------------FOOTER-------------------*/
+
+.footer{
+    background-color: black;
+}

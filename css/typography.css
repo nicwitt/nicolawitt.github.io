@@ -1,37 +1,79 @@
-/* -------------------ROOT------------------- */
-html{
-
-}
-
-:root{
+/* -------------------ROOT & MAIN------------------- */
+:root {
     --primary-font: "Helvetica", sans-serif;
-    --secondary-font: 
+    --secondary-font: "Helvetica Neue", sans-serif;
 
-    --xl-text: 7.0rem;
-    --l-text: 2.0rem;
-    --regular-text: 1.7rem;
-    --s-text: 1.5rem;
+    --xxl-text: 4.5rem;
+    --xl-text: 3.0rem;
+    --l-text: 1.9rem;
+    --regular-text: 1.24rem;
+    --small-text: 0.8em;
 }
 
-/* -------------------IMPORTED FONT------------------- */
+body {
+    font-family: var(--primary-font);
+    color; var(--white)
+}
 
+a{
+    text-decoration: none;
+    color: var(--white);
+}
 
 /* -------------------HEADER PRESETS------------------- */
 
 /* HEADING */
-h1{}
+h1 {
+    font-family: var(--primary-font);
+    font-size: var(--xl-text);
+}
 
 /* SUB-HEADING */
 
-h2{}
+h2 {
+    font-family: var(--primary-font);
+    font-size: var(--l-text);
+}
 
 /* PRODUCT NAMES */
 
-h3{}
+h3 {
+    font-family: var(--primary-font);
+    font-size: var(--l-text);
+}
 
-/* HYPERLINKS */
+/* HYPERLINKS & TEXT */
+
+p{
+    font-family: var(--primary-font); 
+    font-size: var(--regular-text);   
+}
 
 a{
     font-family: var(--primary-font);
+    font-size: var(--regular-text);
 }
 
+li{
+    font-family: var(--primary-font);
+    font-size: var(--small-text);
+}
+
+span{
+    font-family: var(--primary-font);
+    font-size: var(--small-text);
+}
+
+/* -------------------NAVBAR------------------- */
+
+
+nav a{
+    text-decoration: none;
+    font-size: var(--regular-text)
+}
+
+/* -------------------FOOTER------------------- */
+
+footer ul{
+    font-size: var(--regular-text);
+}

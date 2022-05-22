@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://kit.fontawesome.com/b9def743fc.js" crossorigin="anonymous"></script>
     <title>Home</title>
 </head>
 
@@ -16,80 +16,223 @@
 
     <!-- ----------------------NAVBAR----------------------- -->
 
-    <nav class="nav__navigation cluster">
-        <ul class="nav__left cluster">
-            <li><a class="nav-link" href="#">Menu</a>
-                <ion-icon name="menu-outline"></ion-icon>
-            </li>
-        </ul>
-        <img src="/images/nav-logo.png" alt=logo class="logo">
-        <ul class="nav__right cluster">
-            <li><a class="nav-link" href="#">Search</a>
-                <ion-icon name="search-outline"></ion-icon>
-            </li>
-            <li><a class="nav-link" href="#">Cart</a>
-                <ion-icon name="cart-outline"></ion-icon>
-            </li>
-        </ul>
-        <div class="categories__dropdown cluster">
-            <ul class="nav-link">
-                <li><a class="nav-link" href="#">Guitars</a>
-                    <ion-icon name="chevron-down-outline"></ion-icon>
-                </li>
-                <li><a class="nav-link" href="#">Drums</a>
-                    <ion-icon name="chevron-down-outline"></ion-icon>
-                </li>
-                <li><a class="nav-link" href="#">Live Sound</a>
-                    <ion-icon name="chevron-down-outline"></ion-icon>
-                </li>
-                <li><a class="nav-link" href="#">Studio</a>
-                    <ion-icon name="chevron-down-outline"></ion-icon>
-                </li>
-                <li><a class="nav-link" href="#">Keyboard</a>
-                    <ion-icon name="chevron-down-outline"></ion-icon>
-                </li>
-                <li><a class="nav-link" href="#">Sheet Music</a>
-                    <ion-icon name="chevron-down-outline"></ion-icon>
-                </li>
-                <li><a class="nav-link" href="#">Accessories</a>
-                    <ion-icon name="chevron-down-outline"></ion-icon>
-                </li>
+    <nav id="nav">
+        <div class="top-nav">
+            <ul>
+                <li><a href="#">MENU<ion-icon class="hamburger" name="menu-outline"></ion-icon></a></li>
+            </ul>
+            <img src="/images/nav-logo.png" alt=logo class="logo">
+            <ul class="r">
+                <li><a href="#">SEARCH<ion-icon name="search-outline"></ion-icon></a></li>
+                <li><a href="#">CART<ion-icon name="cart-outline"></ion-icon></a></li>
             </ul>
         </div>
-        
+        <div class="dropdown-categories">
+            <ul>
+                <li><a href="#">GUITARS<ion-icon name="chevron-down-outline"></ion-icon></a></li>
+                <li><a href="#">DRUMS<ion-icon name="chevron-down-outline"></ion-icon></a></li>
+                <li><a href="#">LIVE SOUND<ion-icon name="chevron-down-outline"></ion-icon></a></li>
+                <li><a href="#">STUDIO<ion-icon name="chevron-down-outline"></ion-icon></a></li>
+                <li><a href="#">KEYBOARD<ion-icon name="chevron-down-outline"></ion-icon></a></li>
+                <li><a href="#">SHEET MUSIC<ion-icon name="chevron-down-outline"></ion-icon></a></li>
+                <li><a href="#">ACCESSORIES<ion-icon name="chevron-down-outline"></ion-icon></a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- ----------------------HERO BANNER----------------------- -->
 
+    <div class="welcome-image">
+        <img src="/images/Home-Photo.png" alt="Gibson 2020 Model" style="width:100%;"></img>
+        <h1>INDUSTRIE MUSIC PRESENTS</h1>
+        <h1>GIBSON CLASSIC 2020 MODEL</h1>
+    </div>
 
     <!-- ----------------------BEST SELLERS LISTING----------------------- -->
 
+    <div class="img-scroll">
+        <ul class="best-sellers">
+            <h2>VIEW OUR BEST SELLERS</h2>
+            <li><a href="#">
+                    <ion-icon name="open-outline"></ion-icon>
+                    <img src="/images/Gibson-2020.png" alt>
+                    <span>Gibson-2020</span>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="open-outline"></ion-icon>
+                    <img src="/images/Gibson-2020.png" alt>
+                    <span>Gibson-2020</span>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="open-outline"></ion-icon>
+                    <img src="/images/Gibson-2020.png" alt>
+                    <span>Gibson-2020</span>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="open-outline"></ion-icon>
+                    <img src="/images/Gibson-2020.png" alt>
+                    <span>Gibson-2020</span>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="open-outline"></ion-icon>
+                    <img src="/images/Gibson-2020.png" alt>
+                    <span>Gibson-2020</span>
+                </a></li>
+        </ul>
+    </div>
+
     <!-- ----------------------NEW ARRIVALS LISTING----------------------- -->
 
+    <div class="img-scroll">
+        <ul class="new-arrivals">
+            <h2>NEW ARRIVALS</h2>
+            <li><a href="#">
+                    <ion-icon name="open-outline"></ion-icon>
+                    <img src="/images/Gibson-2020.png" alt>
+                    <span>Gibson-2020</span>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="open-outline"></ion-icon>
+                    <img src="/images/Gibson-2020.png" alt>
+                    <span>Gibson-2020</span>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="open-outline"></ion-icon>
+                    <img src="/images/Gibson-2020.png" alt>
+                    <span>Gibson-2020</span>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="open-outline"></ion-icon>
+                    <img src="/images/Gibson-2020.png" alt>
+                    <span>Gibson-2020</span>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="open-outline"></ion-icon>
+                    <img src="/images/Gibson-2020.png" alt>
+                    <span>Gibson-2020</span>
+                </a></li>
+        </ul>
+    </div>
 
     <!-- ----------------------LATEST NEWS----------------------- -->
 
+    <div class="img-scroll">
+        <ul class="latest-news">
+            <h2>LATEST NEWS . 30TH ANNIVERSARY CONCERT</h2>
+            <li><a href="#">
+                    <ion-icon name="open-outline"></ion-icon>
+                    <img src="/images/Gibson-2020.png" alt>
+                    <span>Gibson-2020</span>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="open-outline"></ion-icon>
+                    <img src="/images/Gibson-2020.png" alt>
+                    <span>Gibson-2020</span>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="open-outline"></ion-icon>
+                    <img src="/images/Gibson-2020.png" alt>
+                    <span>Gibson-2020</span>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="open-outline"></ion-icon>
+                    <img src="/images/Gibson-2020.png" alt>
+                    <span>Gibson-2020</span>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="open-outline"></ion-icon>
+                    <img src="/images/Gibson-2020.png" alt>
+                    <span>Gibson-2020</span>
+                </a></li>
+        </ul>
+    </div>
+
+    <!-- ----------------------REVIEWS----------------------- -->
+
+    <div class="img-scroll">
+        <ul class="hear-from-our-customers">
+            <h2>HEAR FROM OUR CUSTOMERS</h2>
+            <li><a href="#">
+                    <ion-icon name="open-outline"></ion-icon>
+                    <img src="/images/Gibson-2020.png" alt>
+                    <span>Gibson-2020</span>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="open-outline"></ion-icon>
+                    <img src="/images/Gibson-2020.png" alt>
+                    <span>Gibson-2020</span>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="open-outline"></ion-icon>
+                    <img src="/images/Gibson-2020.png" alt>
+                    <span>Gibson-2020</span>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="open-outline"></ion-icon>
+                    <img src="/images/Gibson-2020.png" alt>
+                    <span>Gibson-2020</span>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="open-outline"></ion-icon>
+                    <img src="/images/Gibson-2020.png" alt>
+                    <span>Gibson-2020</span>
+                </a></li>
+        </ul>
+    </div>
+
     <!-- ----------------------SIDEBAR----------------------- -->
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div id="sidenav">
         <a href="#">About</a>
         <a href="#">Services</a>
         <a href="#">Clients</a>
         <a href="#">Contact</a>
-      </div>
-      
-      <!-- Use any element to open the sidenav -->
-      <span onclick="openNav()">open</span>
-      
-      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-      <div id="main">
-     
-      </div>
-
+    </div>
 
     <!-- ----------------------FOOTER----------------------- -->
 
+    <footer id="footer">
+        <div class="footer-left">
+            <h3> STAY IN THE KNOW</h3>
+            <p>Email Address</p>
+            <ion-icon class="socials" name="logo-twitter"></ion-icon>
+            <ion-icon class="socials" name="logo-youtube"></ion-icon>
+            <ion-icon class="socials" name="logo-facebook"></ion-icon>
+        </div>
+
+        <div>
+            <h3>ABOUT</h3>
+            <ul>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Pre-Orders</li>
+                <li>Repairs</li>
+                <li>Brands</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>POLICY</h3>
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Refund Policy</li>
+                <li>Shipping Policy</li>
+                <li>Terms of Service</li>
+            </ul>
+        </div>
+
+        <div class="footer-right">
+            <ul>
+                <li>Address: Leichardt NSW 2040</li>
+                <li>Phone: (02) 8123 4080</li>
+                <li>Monday-Friday: 10:30am-4:30pm</li>
+                <li>Saturday-Sunday: CLOSED</li>
+                <li>Public Holidays: CLOSED</li>
+            </ul>
+        </div>
+    </footer>
+
+<script src="nav.js"></script>
 </body>
 
 </html>
