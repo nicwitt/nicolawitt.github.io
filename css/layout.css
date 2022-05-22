@@ -2,44 +2,88 @@
 /* BOX MODEL FIX */
 html {
     box-sizing: border-box;
-  }
-  *, *:before, *:after {
+}
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
-  }
+}
 
 /* ROOT */
-:root {
 
-}
 
 /* MAIN CONTENT */
-.main-content{
-    background-color: black;
-    height: calc(100vh - 8rem);
-    flex: 4;
-}
 
-body{
-
-}
-
-img{
-
-}
 
 
 /* -------------------NAVIGATION BAR------------------- */
 /* NAV BAR LAYOUT */
 
-.nav{
+nav {
+    position: fixed;
+    height: 18%;
+    max-height: 40%;
+    max-width: 100%;
+    z-index: 1;
+    padding: 1em;
 
+}
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top-nav ul{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.top-nav a {
+    margin-right: 30px;
+}
+
+/* DROP DOWN CATEGORIES MENU */
+
+.dropdown-categories > ul{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row; 
+    justify-content: center;
+    position: absolute;
+    top: 85px;
+}
+
+.dropdown-categories li{
+    margin: 25px;
 }
 
 /* MENU ICON */
 
+.hamburger {
+    
+}
 
 /* LOGO */
 
+.logo {
+    max-width: 35%;
+    position: relative;
+    align-self: center;
+    padding: none;
+    margin-left: 70px;
+}
+
+/* ICONS */
+
+ion-icon{
+    position: absolute;
+    justify-content: center;
+    margin-top: 2px;
+}
 
 /* SEARCH ICON */
 
@@ -49,17 +93,10 @@ img{
 
 /* DROP DOWN ICON*/
 
-
-/* DROP DOWN CATEGORIES MENU */
-
+    
+}
 
 /* -------------------SIDE NAV------------------- */
-
-.sidebar{
-    background-color: black;
-    height: calc(100vh - 8rem);
-    flex: 1;
-}
 
 /* TEXT LAYOUT */
 
@@ -79,11 +116,29 @@ img{
 /* DIVIDING LINES LAYOUT */
 
 
-/* -------------------BODY------------------- */
-/* HOMEPAGE */
+/* -------------------HOMEPAGE------------------- */
+/* BANNER IMAGE */
 
+img{
+    
+}
 
-/* PRODUCT PAGE */
+/* SCROLL GALLERIES */
+
+.img-scroll {
+    position: relative;
+}
+
+.img-scroll ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-scroll img {
+    max-width: 40%;
+}
+
+/* -------------------PRODUCT PAGE------------------- */
 
 
 /* PRODUCT LISTING */
@@ -103,16 +158,23 @@ img{
 /* -------------------HOMEPAGE------------------- */
 /* HEADER */
 
+body {
+    background: black;
+}
 
 /* BEST SELLERS */
 
-.img-gallery{
-
+.img-scroll {
+    display: flex;
+    flex-direction: row;
 }
 
-.img-card{
-
+.img-scroll>img {
+    width: 4px;
+    height: 4px;
 }
+
+.img-card {}
 
 /* NEW ARRIVALS */
 
@@ -203,27 +265,45 @@ img{
 
 /* TITLE */
 
-.text-center{
-
-}
+.text-center {}
 
 /* PRODUCT IMAGES */
 
 /* PRODUCT INFORMATION */
 
-.text-left{
-
-}
+.text-left {}
 
 /* PRODUCT PRICE */
 
-.text-right{
-
-}
+.text-right {}
 
 /* END INFORMATION */
 
 /* -------------------FOOTER------------------- */
+footer {
+    background-color: var(--black);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 15em;
+    padding: 2em;
+    margin-left: 0;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer h3{
+    margin-bottom: 20px;
+}
+
+footer li{
+    margin-bottom: 5px;
+}
+
 /* -----LEFT STACK----- */
 
 /* EMAIL INPUT */
