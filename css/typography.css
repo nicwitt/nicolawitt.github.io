@@ -4,8 +4,8 @@ html{
 }
 
 :root{
-    font-family: 'Helvetica', sans-serif;
-    color: white;
+    --primary-font: "Helvetica", sans-serif;
+    --secondary-font: 
 
     --xl-text: 7.0rem;
     --l-text: 2.0rem;
@@ -31,5 +31,7 @@ h3{}
 
 /* HYPERLINKS */
 
-a{}
+a{
+    font-family: var(--primary-font);
+}
 

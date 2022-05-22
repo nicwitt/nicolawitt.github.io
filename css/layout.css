@@ -1,5 +1,5 @@
 /* -------------------MAIN-------------------*/
-
+/* BOX MODEL FIX */
 html {
     box-sizing: border-box;
   }
@@ -7,10 +7,12 @@ html {
     box-sizing: inherit;
   }
 
+/* ROOT */
 :root {
 
 }
 
+/* MAIN CONTENT */
 .main-content{
     background-color: black;
     height: calc(100vh - 8rem);
