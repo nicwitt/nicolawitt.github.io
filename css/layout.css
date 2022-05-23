@@ -167,26 +167,18 @@ ion-icon{
 .welcome-image img{
     position: relative;
     max-width: 100%;
-    margin-top: 5%;
+    margin-top: 11%;
     text-align: center;
     z-index: 0;
-}
-
-.header-top-left{
-    max-width: 500px;
-    position: absolute;
-    z-index: 0.5;
-    top: 180px;
-    left: 40px;
-}
-
-.header-top-left{
-    
 }
 
 /* SCROLL GALLERIES */
 
 .img-scroll {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    color: green;
     position: relative;
 }
 
@@ -197,6 +189,10 @@ ion-icon{
 
 .img-scroll img {
     max-width: 40%;
+}
+
+body {
+    background: black;
 }
 
 
@@ -219,24 +215,6 @@ ion-icon{
 
 /* -------------------HOMEPAGE------------------- */
 /* HEADER */
-
-body {
-    background: black;
-}
-
-/* BEST SELLERS */
-
-.img-scroll {
-    display: flex;
-    flex-direction: row;
-}
-
-.img-scroll>img {
-    width: 4px;
-    height: 4px;
-}
-
-.img-card {}
 
 /* NEW ARRIVALS */
 
