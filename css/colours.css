@@ -8,22 +8,26 @@
 
 /* -------------------MAIN-------------------*/
 body{
-    background: rgb(0,0,0) !important;
     background: linear-gradient(120deg, rgba(0,0,0,1) 0%, rgba(6,25,29,1) 77%, rgba(19,85,99,1) 92%, rgba(34,150,175,1) 100%) !important;
     color: var(--white);
+}
+
+a:hover{
+    color: var(--myBlueLight);
 }
 
 /* -------------------NAVBAR-------------------*/
 
 /* NAVMAIN */
 nav{
-    background-color: black;
-    opacity: 90%;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 58%, rgba(0,0,0,0.8057598039215687) 100%);
 }
 
 nav a{
     color: var(--white);
 }
+
 
 /* NAV DROPDOWN */
 nav .drop-down{
@@ -33,8 +37,9 @@ nav .drop-down{
 
 /* -------------------SIDENAV-------------------*/
 
-body{
-    background: linear-gradient(black), var(--myBlueLight);
+#sidenav{
+    background: linear-gradient(120deg, rgba(0,0,0,1) 0%, rgba(6,25,29,1) 77%, rgba(19,85,99,1) 92%, rgba(34,150,175,1) 100%) !important;
+
 }
 
 /* -------------------BODY-------------------*/

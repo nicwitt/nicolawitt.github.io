@@ -94,9 +94,54 @@ ion-icon{
 /* DROP DOWN ICON*/
 
     
-}
 
 /* -------------------SIDE NAV------------------- */
+
+#sidenav{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    width: 40%;
+    height: 100%;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+#sidenav li{
+    margin-bottom: 10px;
+}
+
+#sidenav hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+
+#sidenav .shop-dropdown{
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+#sidenav .shop-dropdown ion-icon{
+    position: relative;
+    size: 30px;
+    margin-right: 10px;
+}
+
+.cluster-one {
+    margin-bottom: 40px;
+}
+
+.cluster-two{
+    margin-bottom: 40px;
+}
+
+.sidenav-search hr{
+    margin-top: 20px;
+}
+
 
 /* TEXT LAYOUT */
 
@@ -119,7 +164,23 @@ ion-icon{
 /* -------------------HOMEPAGE------------------- */
 /* BANNER IMAGE */
 
-img{
+.welcome-image img{
+    position: relative;
+    max-width: 100%;
+    margin-top: 5%;
+    text-align: center;
+    z-index: 0;
+}
+
+.header-top-left{
+    max-width: 500px;
+    position: absolute;
+    z-index: 0.5;
+    top: 180px;
+    left: 40px;
+}
+
+.header-top-left{
     
 }
 
@@ -137,6 +198,7 @@ img{
 .img-scroll img {
     max-width: 40%;
 }
+
 
 /* -------------------PRODUCT PAGE------------------- */
 

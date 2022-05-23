@@ -4,15 +4,16 @@
     --secondary-font: "Helvetica Neue", sans-serif;
 
     --xxl-text: 4.5rem;
-    --xl-text: 3.0rem;
-    --l-text: 1.9rem;
+    --xl-text: 3vw;
+    --l-text: 1.9vw;
+    --nav-text: 1.6rem;
     --regular-text: 1.24rem;
     --small-text: 0.8em;
 }
 
 body {
     font-family: var(--primary-font);
-    color; var(--white)
+    color: var(--white)
 }
 
 a{
@@ -61,7 +62,7 @@ li{
 
 span{
     font-family: var(--primary-font);
-    font-size: var(--small-text);
+    font-size: var(--regular-text);
 }
 
 /* -------------------NAVBAR------------------- */
@@ -70,6 +71,20 @@ span{
 nav a{
     text-decoration: none;
     font-size: var(--regular-text)
+}
+
+/* -------------------SIDENAV------------------- */
+
+#sidenav a{
+    font-size: var(--nav-text)
+}
+
+#sidenav span{
+    font-size: var(--nav-text);
+}
+
+#sidenav .shop-dropdown a{
+    font-size: var(--regular-text);
 }
 
 /* -------------------FOOTER------------------- */
