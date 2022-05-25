@@ -22,7 +22,7 @@ html {
 
 nav {
     position: fixed;
-    height: 18%;
+    height: 20%;
     max-height: 40%;
     max-width: 100%;
     z-index: 1;
@@ -79,7 +79,7 @@ nav {
 
 /* ICONS */
 
-ion-icon{
+nav ion-icon{
     position: absolute;
     justify-content: center;
     margin-top: 2px;
@@ -167,67 +167,90 @@ ion-icon{
 .welcome-image img{
     position: relative;
     max-width: 100%;
-    margin-top: 11%;
+    margin-top: 10.5%;
     text-align: center;
     z-index: 0;
 }
 
 /* SCROLL GALLERIES */
 
-.img-scroll {
+.photo-gallery{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: none;
+    z-index: 1;
+}
+
+.img-scroll {    
     display: flex;
     flex-direction: row;
-    overflow: hidden;
-    color: green;
     position: relative;
 }
 
-.img-scroll ul {
+.img-scroll img {
+    width: 100px;
+    min-width: 30%;
+}
+
+.img-scroll:not(:last-child){
+    margin-bottom: 80px;
+}
+
+.img-scroll h2{
+    position: sticky;
+    margin-left: 3vh;
+    margin-right: 200px;
+    text-align: left;
+    align-items: flex-end;
+    width: 55%;
+}
+
+.product-row {
     display: flex;
     flex-direction: row;
+    overflow: auto;
 }
 
-.img-scroll img {
-    max-width: 40%;
+.product-row a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12vw;
+    border: 1px solid #ffffff;
+    margin-right: 20px;
+    overflow: hidden;
 }
 
-body {
-    background: black;
+.product-row span{
+    margin-top: 20px;
 }
 
+.product-row ion-icon{
+    position: absolute;
+}
 
-/* -------------------PRODUCT PAGE------------------- */
-
-
-/* PRODUCT LISTING */
-
-
-/* ADD TO CART ACCOUNCEMENT */
-
-
-/* SHOPPING CART */
-
-
-/* CHECKOUT */
-
-
-/* ORDER CONFIRMATION */
-
-/* -------------------HOMEPAGE------------------- */
-/* HEADER */
-
-/* NEW ARRIVALS */
-
-
-/* LATEST NEWS */
-
-
-/* REVIEWS */
 
 /* -------------------PRODUCT PAGE------------------- */
 /* BREADCRUMBS */
 
+.breadcrumbs {
+    color: green;
+    display: flex;
+}
+
+/* FILTER & PRODUCT CONTAINER */
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+
 /* FILTERS */
+.filter-colours li img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
 
 /* PHOTO GALLERY GRID */
 
@@ -342,6 +365,10 @@ footer h3{
 
 footer li{
     margin-bottom: 5px;
+}
+
+footer ion-icon{
+    
 }
 
 /* -----LEFT STACK----- */
