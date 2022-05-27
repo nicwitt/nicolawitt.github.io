@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#navbar').load("nav-bar.html");
+
+        });
+    </script>
     <title>Product Page</title>
 </head>
 
@@ -15,12 +23,14 @@
 
     <!-- ----------------------NAVBAR IMPORT----------------------- -->
 
+    <div id="navbar"></div>
 
     <!-- ----------------------BREADCRUMBS----------------------- -->
 
     <hr>
     <div class="breadcrumbs">
-        <p class="previous-page">GUITARS<ion-icon name="chevron-forward-outline"></ion-icon></p>
+        <p class="previous-page">GUITARS<ion-icon name="chevron-forward-outline"></ion-icon>
+        </p>
         <p class="current-page">ELECTRIC GUITARS</p>
     </div>
     <hr>
@@ -80,6 +90,7 @@
 
         <!-- PHOTO GALLERY GRID -->
         <div class="gallery-container">
+
 
         </div>
 

@@ -11,23 +11,16 @@ html {
 }
 
 /* ROOT */
-
-
 /* MAIN CONTENT */
-
-
-
 /* -------------------NAVIGATION BAR------------------- */
 /* NAV BAR LAYOUT */
-
 nav {
     position: fixed;
-    height: 20%;
+    height: 18%;
     max-height: 40%;
     max-width: 100%;
     z-index: 1;
     padding: 1em;
-
 }
 
 .top-nav {
@@ -36,7 +29,7 @@ nav {
     justify-content: space-between;
 }
 
-.top-nav ul{
+.top-nav ul {
     display: flex;
     flex-direction: row;
     padding: 30px;
@@ -47,28 +40,23 @@ nav {
 }
 
 /* DROP DOWN CATEGORIES MENU */
-
-.dropdown-categories > ul{
+.dropdown-categories>ul {
     width: 100%;
     display: inline-flex;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: center;
     position: absolute;
     top: 85px;
 }
 
-.dropdown-categories li{
+.dropdown-categories li {
     margin: 25px;
 }
 
 /* MENU ICON */
-
-.hamburger {
-    
-}
+.hamburger {}
 
 /* LOGO */
-
 .logo {
     max-width: 35%;
     position: relative;
@@ -78,26 +66,17 @@ nav {
 }
 
 /* ICONS */
-
-nav ion-icon{
+nav ion-icon {
     position: absolute;
     justify-content: center;
     margin-top: 2px;
 }
 
 /* SEARCH ICON */
-
-
 /* CART ICON */
-
-
 /* DROP DOWN ICON*/
-
-    
-
 /* -------------------SIDE NAV------------------- */
-
-#sidenav{
+#sidenav {
     position: fixed;
     z-index: 1;
     top: 0;
@@ -109,22 +88,22 @@ nav ion-icon{
     padding-left: 40px;
 }
 
-#sidenav li{
+#sidenav li {
     margin-bottom: 10px;
 }
 
-#sidenav hr{
+#sidenav hr {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 40px;
 }
 
-#sidenav .shop-dropdown{
+#sidenav .shop-dropdown {
     margin-left: 5px;
     margin-top: 10px;
 }
 
-#sidenav .shop-dropdown ion-icon{
+#sidenav .shop-dropdown ion-icon {
     position: relative;
     size: 30px;
     margin-right: 10px;
@@ -134,57 +113,65 @@ nav ion-icon{
     margin-bottom: 40px;
 }
 
-.cluster-two{
+.cluster-two {
     margin-bottom: 40px;
 }
 
-.sidenav-search hr{
+.sidenav-search hr {
     margin-top: 20px;
 }
 
-
 /* TEXT LAYOUT */
-
-
 /* CONTENT LAYOUT */
-
-
 /* CLOSE BUTTON LAYOUT */
-
-
 /* MINIMISE BUTTON LAYOUT */
-
-
 /* SEARCH BUTTON LAYOUT */
-
-
 /* DIVIDING LINES LAYOUT */
-
-
 /* -------------------HOMEPAGE------------------- */
 /* BANNER IMAGE */
-
-.welcome-image img{
+.welcome-image img {
     position: relative;
     max-width: 100%;
-    margin-top: 10.5%;
+    margin-top: 9%;
     text-align: center;
     z-index: 0;
 }
 
 /* SCROLL GALLERIES */
-
-.photo-gallery{
+.photo-gallery {
     padding-top: 30px;
     padding-bottom: 50px;
     padding-left: none;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.product-row{
+    overflow: auto;
+    display: flex;
+    /*position: relative;*/
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+   
+
+   
+    
 }
 
-.img-scroll {    
-    display: flex;
-    flex-direction: row;
+.img-scroll h2{
     position: relative;
+    left:0%;
+    top:20%;
+}
+.img-scroll {
+    display: flex;
+    /*position: relative;*/
+
+    
+    max-height: 42vh;
+ 
 }
 
 .img-scroll img {
@@ -192,11 +179,20 @@ nav ion-icon{
     min-width: 30%;
 }
 
-.img-scroll:not(:last-child){
+.feature-header {
+    width: 60%;
+    position: relative;
+    background: linear-gradient(90deg, black, transparent);
+    height: 100%;
+    /* display: flex; */
+    align-items: center;
+}
+
+.img-scroll:not(:last-child) {
     margin-bottom: 80px;
 }
 
-.img-scroll h2{
+.img-scroll h2 {
     position: sticky;
     margin-left: 3vh;
     margin-right: 200px;
@@ -205,13 +201,16 @@ nav ion-icon{
     width: 55%;
 }
 
-.product-row {
+/*.product-row {
     display: flex;
     flex-direction: row;
     overflow: auto;
-}
+    width: 100%;
+    height: 100%;
+    
+}*/
 
-.product-row a{
+.product-row a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -221,31 +220,29 @@ nav ion-icon{
     overflow: hidden;
 }
 
-.product-row span{
+.product-row span {
     margin-top: 20px;
 }
 
-.product-row ion-icon{
+.product-row ion-icon {
     position: absolute;
 }
 
-
 /* -------------------PRODUCT PAGE------------------- */
 /* BREADCRUMBS */
-
 .breadcrumbs {
     color: green;
     display: flex;
 }
 
 /* FILTER & PRODUCT CONTAINER */
-.flex-container{
+.flex-container {
     display: flex;
     flex-direction: row;
 }
 
-/* FILTERS */
-.filter-colours li img{
+/* FILTERS015
+max-width:filter-colours li img{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -253,95 +250,52 @@ nav ion-icon{
 }
 
 /* PHOTO GALLERY GRID */
-
 /* LOAD MORE */
-
-
 /* -------------------PRODUCT PAGE------------------- */
 /* BREADCRUMBS */
-
 /* PHOTO GALLERY MAIN*/
-
 /* PHOTOGALLERY SCROLL */
-
 /* DESCRIPTION & DETAILS */
-
 /* FEATURES */
-
 /* PRODUCT INFORMATION MAIN */
-
 /* PRODUCT COLOUR OPTIONS */
-
 /* ACTION BUTTONS CLUSTER STACK */
-
-
 /* -------------------ADD TO CART ANNOUNCEMENT------------------- */
-
-
 /* HEADER */
-
 /* EXIT ICON */
-
 /* PRODUCT INFORMATION */
-
 /* PRODUCT IMAGE */
-
 /* QUANTITY BOX */
-
 /* ACTION BUTTONS CLUSTER */
-
-
 /* -------------------SHOPPING CART------------------- */
 /* -----SCROLL STACK----- */
-
 /* CART TITLE */
-
 /* PRODUCT IMAGES */
-
 /* PRODUCT INFORMATION */
-
 /* PRODUCT COLOUR */
-
 /* BIN ICON */
-
 /* QUANTITY */
-
 /* -----SUMMARY CENTERED STACK----- */
-
 /* SUBTOTAL TITLE */
-
 /* ACTION BUTTONS */
-
-
 /* -------------------SHOPPING CART------------------- */
 /* -----CHECKOUT STACK----- */
-
 /* SHIPT TO */
-
 /* SHOPPING */
-
 /* PAYMENT METHOD */
-
 /* CONFIRM PAYMENT BUTTON */
-
 /* -----CART SUMMARY STACK----- */
-
 /* TITLE */
-
 .text-center {}
 
 /* PRODUCT IMAGES */
-
 /* PRODUCT INFORMATION */
-
 .text-left {}
 
 /* PRODUCT PRICE */
-
 .text-right {}
 
 /* END INFORMATION */
-
 /* -------------------FOOTER------------------- */
 footer {
     background-color: var(--black);
@@ -353,33 +307,25 @@ footer {
     margin-left: 0;
 }
 
-.socials{
+.socials {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-footer h3{
+footer h3 {
     margin-bottom: 20px;
 }
 
-footer li{
+footer li {
     margin-bottom: 5px;
 }
 
-footer ion-icon{
-    
-}
+footer ion-icon {}
 
 /* -----LEFT STACK----- */
-
 /* EMAIL INPUT */
-
 /* SOCIALS CLUSTER */
-
 /* -----ABOUT STACK----- */
-
-
 /* -----POLICY STACK----- */
-
 /* -----RIGHT STACK - BUSINESS INFORMATION----- */
