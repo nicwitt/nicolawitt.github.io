@@ -262,6 +262,9 @@ nav ion-icon {
     width: 50%;
     margin-left: 1.5%;
     margin-top: 1vw;
+    padding-right: 0.5vw;
+    margin-bottom: 1%;
+    overflow: auto;
 }
 
 .filter-title{
@@ -272,8 +275,38 @@ nav ion-icon {
 }
 
 .sort-by{
+    display: flex;
+    width: 58%;
     border: 1px solid #ffffff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
 }
+
+.filter-container p{
+    margin-top: 8%;
+    margin-bottom: 4%;
+}
+
+.filter-container li{
+    margin-bottom: 2%;
+}
+
+.filter-colours{
+    width: 60%;
+}
+
+.filter-colours p{
+    padding-top: 4%;
+    margin-bottom: 10%;
+}
+
+.filter-dot {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+  }
 
 /* PHOTO GALLERY GRID */
 
@@ -281,29 +314,64 @@ nav ion-icon {
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
     justify-content: space-around;
     margin-top: 1vw;
     margin-right: 0.5vw;
 }
 
 .product-gallery{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: stretch;
     border: 1px solid white;
     margin-bottom: 1%;
+    width: 24%;
+    max-height: 30%;
 }
 
 .product-gallery img{
     max-width: 17vw;
     min-width: 80%;
     margin: 2.2vh;
+    padding-top: 4%;
+    margin-bottom: 5%;
 }
 
 .details-row{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 6%;
 }
 
+.product-gallery p{
+    padding-left: 3%;
+    padding-right: 3%;
+}
 
+.sold-out-text{
+    position: absolute;
+    padding: 3%;
+    top: 0;
+}
+
+.image-dot {
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    background-color: #bbb;
+    border-radius: 50%;
+    right: 0;
+  }
+
+.blue-dot{
+    background-color: rgb(150, 61, 61);
+}
 
 /* LOAD MORE */
 /* -------------------PRODUCT PAGE------------------- */
@@ -360,6 +428,7 @@ footer {
     height: 15em;
     padding: 2em;
     margin-left: 0;
+    border-top: 1px solid white;
 }
 
 .socials {
@@ -372,15 +441,10 @@ footer p {
     margin-bottom: 30%;
 }
 
-.footer-left p{
-    margin-bottom: 30%;
-}
-
 footer li {
     margin-bottom: 5px;
 }
 
-footer ion-icon {}
 
 /* -----LEFT STACK----- */
 /* EMAIL INPUT */

@@ -8,7 +8,9 @@
     --l-text: 160%;
     --nav-text: 140%;
     --regular-text: 120%;
-    --small-text: 100%;
+    --small-text: 110%;
+    --xs-text: 100%;
+    --xxs-text: 80%;
 }
 
 body {
@@ -91,10 +93,18 @@ nav a{
 
 
 .product-brand{
-    font-size: var(--small-text);
+    font-size: var(--xs-text);
 }
 
 .product-name{
+    font-size: var(--small-text);
+}
+
+.product-price{
+    font-size: var(--small-text);
+}
+
+.sold-out-text{
     font-size: var(--regular-text);
 }
 
@@ -105,5 +115,9 @@ footer ul{
 }
 
 footer a{
-    font-size: var(--small-text) !important;
+    font-size: var(--xxs-text) !important;
+}
+
+.footer-right{
+    font-size: var(--xxs-text) !important;
 }

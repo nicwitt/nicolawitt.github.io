@@ -5,7 +5,18 @@
     --black: black;
     --myBlueLight: #2F7493; 
     --myBlueDark: #0F3A43; 
+    --dot-dark-blue: #2F7493;
+    --dot-light-blue: #51AFDB;
+    --dot-olive: #77774B;
+    --dot-cream: #E7E7C6;
+    --dot-grey: #9E998F;
+    --dot-purple: #552A52;
+    --dot-green: #95BC9D;
+    --dot-aqua: #6BB2A3;
+    --dot-orange: #F5B366;
+    --dot-peach: #E89279;
 }
+
 
 /* -------------------MAIN-------------------*/
 body{
@@ -69,15 +80,76 @@ body{
     color: var(--grey);
 }
 
+/* FILTER DOTS */
+
+.dot-dark-blue{
+    background-color: var(--dot-dark-blue);
+}
+
+.dot-light-blue{
+    background-color: var(--dot-light-blue);
+}
+
+.dot-olive{
+    background-color: var(--dot-olive);
+}
+
+.dot-cream{
+    background-color: var(--dot-cream);
+}
+
+.dot-grey{
+    background-color: var(--dot-grey);
+}
+
+.dot-purple{
+    background-color: var(--dot-purple);
+}
+
+.dot-green{
+    background-color: var(--dot-green);
+}
+
+.dot-aqua{
+    background-color: var(--dot-aqua);
+}
+
+.dot-orange{
+    background-color: var(--dot-orange);
+}
+
+.dot-peach{
+    background-color: var(--dot-peach);
+}
+
+.dot-white{
+    background-color: var(--white);
+}
+
+
 /* PHOTO GALLERY */
+
+.product-gallery{
+    background: var(--black);
+}
+
 .product-gallery:hover {
     background: linear-gradient(#000000, #29769d);
     color: var(--white);
 }  
 
+/* SOLD OUT */
+
+.sold-out{
+    /* background: var(--myBlueLight); */
+    opacity: 32%;
+}
+
 .product-brand{
     color: var(--grey);
 }
+
+
 
 /* -------------------FOOTER-------------------*/
 
