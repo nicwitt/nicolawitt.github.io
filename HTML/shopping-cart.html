@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,26 +12,83 @@
     <script>
         $(document).ready(function () {
 
-            $('#navbar').load("nav-bar.html");
-
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-
-            $('#footer').load("footer.html");
+            $('#navbar').load("navbar-checkout.html");
 
         });
     </script>
     <title>Shopping-Cart</title>
 </head>
+
 <body>
 
-<!-- ----------------------NAVBAR----------------------- -->
+    <!-- ----------------------NAVBAR----------------------- -->
     <div id="navbar"></div>
 
-    
+    <!-- ----------------------MAIN CONTAINER----------------------- -->
 
-<!-- ----------------------FOOTER----------------------- -->
+    <div class="checkout-main-container">
+        <div class="checkout-scroll">
+            <h2>CART</h2>
+            <div class="cart-item">
+                <img class="checkout-image" src="/images/1Les-Paul-Classic.png" alt="les paul classic">
+                <div class="cart-product-details">
+                    <p class="checkout-product-brand">GIBSON 2020</p>
+                    <p>LES PAUL CLASSIC</p>
+                    <p>$2,440.00</p>
+                    <span class="dot-checkout dot-dark-dark-blue"></span>
+                    <div class="quantity-checkout">
+                        <a href="#">-</a>
+                        <p>1</p>
+                        <a href="#">+</a>
+                    </div>
+                    <div class="bin">
+                        <ion-icon name="trash-bin-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img class="checkout-image" src="/images/1Les-Paul-Classic.png" alt="les paul classic">
+                <div class="cart-product-details">
+                    <p class="-checkout-product-brand">GIBSON 2020</p>
+                    <p>LES PAUL CLASSIC</p>
+                    <p>$2,440.00</p>
+                    <span class="dot-checkout dot-dark-dark-blue"></span>
+                    <div class="quantity-checkout">
+                        <a href="#">-</a>
+                        <p>1</p>
+                        <a href="#">+</a>
+                    </div>
+                    <div class="bin">
+                        <ion-icon name="trash-bin-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img class="checkout-image" src="/images/1Les-Paul-Classic.png" alt="les paul classic">
+                <div class="cart-product-details">
+                    <p class="checkout-product-brand">GIBSON 2020</p>
+                    <p>LES PAUL CLASSIC</p>
+                    <p>$2,440.00</p>
+                    <span class="dot-checkout dot-dark-dark-blue"></span>
+                    <div class="quantity-checkout">
+                        <a href="#">-</a>
+                        <p>1</p>
+                        <a href="#">+</a>
+                    </div>
+                    <div class="bin">
+                        <ion-icon name="trash-bin-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="checkout-summary">
+            <h2>SUBTOTAL: $8,620.00</h2>
+            <a href="#" class="checkout-button">CONTINUE SHOPPING</a>
+            <a href="#" class="checkout-button">CHECKOUT</a>
+        </div>
+    </div>
 
-    <div id="footer"></div>
+    <!-- CART ITEMS SCROLL -->
+
+
+    <!-- FIXED CART SUMMARY -->

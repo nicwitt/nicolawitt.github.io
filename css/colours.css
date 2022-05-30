@@ -4,7 +4,8 @@
     --grey: #9F9F9F;
     --black: black;
     --myBlueLight: #2F7493; 
-    --myBlueDark: #0F3A43; 
+    --myBlueDark: #0F3A43;
+    --dot-dark-dark-blue: #121C2F; 
     --dot-dark-blue: #2F7493;
     --dot-light-blue: #51AFDB;
     --dot-olive: #77774B;
@@ -150,8 +151,27 @@ body{
 }
 
 
+/* -------------------ADD TO CART-------------------*/
+.add-to-cart{
+    background-color: black;
+}
+
+.cart-add-brand{
+    color: var(--grey);
+}
+
+.dot-dark-dark-blue{
+    background-color: var(--dot-dark-dark-blue);
+    border: 2px solid white;
+}
+
+.cart-add-buttons a:hover{
+    background: linear-gradient(#000000, #29769d);
+    color: var(--white);
+}
 
 /* -------------------FOOTER-------------------*/
+
 
 .footer{
     background-color: black;
