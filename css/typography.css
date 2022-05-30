@@ -3,12 +3,12 @@
     --primary-font: "Helvetica", sans-serif;
     --secondary-font: "Helvetica Neue", sans-serif;
 
-    --xxl-text: 4.5rem;
-    --xl-text: 3rem;
-    --l-text: 1.9rem;
-    --nav-text: 1.6rem;
-    --regular-text: 1.24rem;
-    --small-text: 0.8em;
+    --xxl-text: 220%;
+    --xl-text: 200%;
+    --l-text: 160%;
+    --nav-text: 140%;
+    --regular-text: 120%;
+    --small-text: 100%;
 }
 
 body {
@@ -26,14 +26,14 @@ a{
 /* HEADING */
 h1 {
     font-family: var(--primary-font);
-    font-size: var(--xl-text);
+    font-size: var(--xxl-text);
 }
 
 /* SUB-HEADING */
 
 h2 {
     font-family: var(--primary-font);
-    font-size: var(--l-text);
+    font-size: var(--xl-text);
 }
 
 /* PRODUCT NAMES */
@@ -87,8 +87,23 @@ nav a{
     font-size: var(--regular-text);
 }
 
+/* -------------------PRODUCT PAGE------------------- */
+
+
+.product-brand{
+    font-size: var(--small-text);
+}
+
+.product-name{
+    font-size: var(--regular-text);
+}
+
 /* -------------------FOOTER------------------- */
 
 footer ul{
     font-size: var(--regular-text);
+}
+
+footer a{
+    font-size: var(--small-text) !important;
 }

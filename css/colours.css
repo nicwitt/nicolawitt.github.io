@@ -1,6 +1,7 @@
 /* -------------------ROOT-------------------*/
 :root {
     --white: white;
+    --grey: #9F9F9F;
     --black: black;
     --myBlueLight: #2F7493; 
     --myBlueDark: #0F3A43; 
@@ -60,6 +61,23 @@ body{
     color: var(--white);
 }   
 
+
+/* -------------------PRODUCT PAGE-------------------*/
+
+/* BREADCRUMBS */
+.previous-page{
+    color: var(--grey);
+}
+
+/* PHOTO GALLERY */
+.product-gallery:hover {
+    background: linear-gradient(#000000, #29769d);
+    color: var(--white);
+}  
+
+.product-brand{
+    color: var(--grey);
+}
 
 /* -------------------FOOTER-------------------*/
 
