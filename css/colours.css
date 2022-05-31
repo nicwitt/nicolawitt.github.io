@@ -28,6 +28,11 @@ a:hover{
     color: var(--myBlueLight);
 }
 
+.grey{
+    color: var(--grey);
+}
+
+
 /* -------------------NAVBAR-------------------*/
 
 /* NAVMAIN */
@@ -164,11 +169,6 @@ body{
     opacity: 32%;
 }
 
-.product-brand{
-    color: var(--grey);
-}
-
-
 /* -------------------ADD TO CART-------------------*/
 .add-to-cart{
     background-color: black;
@@ -184,6 +184,27 @@ body{
 }
 
 .cart-add-buttons a:hover{
+    background: linear-gradient(#000000, #29769d);
+    color: var(--white);
+}
+
+/* -------------------SHOPPING CART-------------------*/
+
+
+.checkout-product-tile {
+    border: 1px solid white;
+    background-color: black;
+}
+
+.checkout-product-brand{
+    color: var(--grey);
+}
+
+.checkout-button{
+    background: var(--black);
+}
+
+.checkout-button:hover{
     background: linear-gradient(#000000, #29769d);
     color: var(--white);
 }

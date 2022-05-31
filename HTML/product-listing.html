@@ -29,12 +29,12 @@
 <body>
 
     <!-- ----------------------NAVBAR----------------------- -->
-    <!-- <div id="navbar"></div> -->
+    <div id="navbar"></div>
 
 
     <!-- ----------------------BREADCRUMBS----------------------- -->
 
-    <div class="breadcrumbs">
+    <div class="breadcrumbs breadcrumbs-product">
         <h3 class="previous-page"><a href="#">GUITARS</a>
             <ion-icon name="chevron-forward-outline"></ion-icon>
         </h3>
@@ -49,34 +49,35 @@
     <!-- IMAGE GALLERY -->
     <div class="product-listing-container">
         <div class="listing-gallery">
-            <img classic="listing-main" src="/images/Les-Paul-Classic.png" alt="Les Paul Classic">
-            <div class="listing-scroll-container">
-                <div class="listing-scroll">
-                    <img src="/images/listing-1.png" alt="les paul classic close up">
-                    <img src="/images/listing-2.png" alt="les paul classic body">
-                    <img src="/images/listing-3.png" alt="les paul classic handle">
-                    <img src="/images/listing-1.png" alt="les paul classic close up">
-                </div>
+            <img class="listing-main" src="/images/Les-Paul-Classic.png" alt="Les Paul Classic">
+            <div class="listing-scroll">
+                <img class="listing-scroll-tile" src="/images/listing-1.png" alt="les paul classic close up">
+                <img class="listing-scroll-tile" src="/images/listing-2.png" alt="les paul classic body">
+                <img class="listing-scroll-tile" src="/images/listing-3.png" alt="les paul classic handle">
+                <img class="listing-scroll-tile" src="/images/listing-1.png" alt="les paul classic close up">
             </div>
         </div>
         <!-- PRODUCT INFO -->
         <div class="listing-details-container">
-            <div class="listing-details">
-                <h2>GIBSON 2020</h2>
-                <h2>LES PAUL CLASSIC</h2>
-                <span class="dot-large dot-dark-blue"></span>
-                <span class="dot-large dot-dark-blue"></span>
-            </div>
-            <div class="listing-price">
-                <h2>$2,440.00</h2>
+            <div class="details-colours-row">
+                <div class="listing-details">
+                    <h2 class="grey">GIBSON 2020</h2>
+                    <h2>LES PAUL CLASSIC</h2>
+                    <h2 class="listing-price">$2,440.00</h2>
+                </div>
+                <div class="listing-colours">
+                    <div class="dot-large dot-dark-blue"></div>
+                    <div class="dot-large dot-dark-dark-blue dot-border"></div>
+                </div>
             </div>
             <!-- PURCHASE OPTIONS -->
             <div class="listing-action-buttons">
-                <a class="add-to-cart" href="#">Add to Cart</a>
+                <a class="product-add-to-cart" href="#">Add to Cart</a>
                 <a class="item-qnty" href="#">- 1 +</a>
                 <a class="buy-now" href="#">Buy Now</a>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- ----------------------PRODUCT DESCRIPTION CONTAINER----------------------- -->

@@ -69,21 +69,23 @@ body{
     margin-top: 9rem;
     padding: 0rem;
     list-style: none;
-    width: 9rem;
+    width: 11rem;
     margin-bottom: 4rem;
     color: #CECECE;
+    border: 1px solid white;
+    background-color: black;
 }
 
 .product-row img{
-    height: 20rem;
+    height: 25rem;
     padding: 0rem 1rem;
     margin-top: -7.5rem;
     margin-left: 0rem;
 }
 
 .tile-buttons{
-    border: 1px solid white;
-    background-color: black;
+    /* border: 1px solid white;
+    background-color: black; */
     font-size: 1rem
 }
 

@@ -1,3 +1,10 @@
+// ----------------NAV BAR------------------
+
+function toggleResponsive() {
+  var navbar = document.getElementById("dropdown-categories");
+ navbar.classList.toggle("responsive");
+} 
+
 // ----------------SIDE NAV------------------
 
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
@@ -13,3 +20,12 @@ function openNav() {
     document.getElementById("main").style.marginLeft = "0";
     document.body.style.backgroundColor = "white";
   }
+
+// ----------------FILTER BUTTONS------------------
+
+
+// ----------------ADD TO CART------------------
+
+
+
+// ----------------CHECKOUT VALIDATION------------------

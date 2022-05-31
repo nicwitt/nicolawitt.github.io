@@ -27,100 +27,101 @@
     <!-- ----------------------PAYMENT INFORMATION FIELD----------------------- -->
 
     <!-- BREADCRUMBS -->
-        <div class="payment-field">
-            <div class="breadcrumbs">
-                <h3 class="previous-page"><a href="#">CART</a>
-                    <ion-icon name="chevron-forward-outline"></ion-icon>
-                </h3>
-                <h3 class="previous-page"><a href="#">CHECKOUT</a>
-                    <ion-icon name="chevron-forward-outline"></ion-icon>
-                </h3>
-                <h3 class="current-page"><a href="#">PAYMENT</a>
-                    <ion-icon name="chevron-forward-outline"></ion-icon>
-                </h3>
-            </div>
-    
-    <!-- PAYMENT METHOD RADIO BOX -->
-            <div class="payment-payment-method">
-                <h3 class="payment-method-header">PAYMENT METHOD</h3>
-                <input type="radio" id="credit-card" name="payment-method" value="CREDIT-CARD">
-                <label for="credit-card">Credit Card</label><br>
-                <input type="radio" id="paypal" name="payment-method" value="PAYPAL">
-                <label for="paypal">Paypal</label><br>
-                <input type="radio" id="afterpay" name="payment-method" value="AFTERPAY">
-                <label for="afterpay">Afterpay</label>
-                <input type="radio" id="zippay" name="payment-method" value="ZIPPAY">
-                <label for="zippay">ZipPay</label>
-            </div>
+    <div class="payment-field">
+        <div class="breadcrumbs">
+            <h3 class="previous-page"><a href="#">CART</a>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </h3>
+            <h3 class="previous-page"><a href="#">CHECKOUT</a>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </h3>
+            <h3 class="current-page"><a href="#">PAYMENT</a>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </h3>
+        </div>
 
-    <!-- PAYMENT DETAILS FORM FIELDS -->        
+        <!-- PAYMENT METHOD RADIO BOX -->
+        <div class="payment-payment-method">
+            <h3 class="payment-method-header">PAYMENT METHOD</h3>
+            <input type="radio" id="credit-card" name="payment-method" value="CREDIT-CARD">
+            <label for="credit-card">Credit Card</label><br>
+            <input type="radio" id="paypal" name="payment-method" value="PAYPAL">
+            <label for="paypal">Paypal</label><br>
+            <input type="radio" id="afterpay" name="payment-method" value="AFTERPAY">
+            <label for="afterpay">Afterpay</label>
+            <input type="radio" id="zippay" name="payment-method" value="ZIPPAY">
+            <label for="zippay">ZipPay</label>
+        </div>
+
+        <!-- PAYMENT DETAILS FORM FIELDS -->
+        <form action="checkout-confirmation.html" method="POST">
             <div class="payment-details">
                 <h3 class="payment-details-header">PAYMENT DETAILS</h3>
                 <input class="form-input-payment" type="text" placeholder="Card Number">
                 <input class="form-input-payment-details" type="text" placeholder="MM / YY">
                 <input class="form-input-payment-details" type="text" placeholder="CVV">
             </div>
-            <div class="confirm-payment">
-                <input type="submit" value="Confirm Payment" class="btn">
-            </div>
-        </div>
+            <!-- SUBMIT BUTTON -->
+            <button type="submit">COMPLETE PURCHASE</button>
+        </form>
+    </div>
+    
 
     <!-- ----------------------ORDER SUMMERY TILE----------------------- -->
-    
-    <!-- ORDER SUMMARY HEADER -->        
-        <div class="order-summary-container">
-            <h3 class="summary-header">ORDER SUMMARY</h3>
 
-    <!-- CART ITEM WRAPPERS -->           
-            <div class="summary-item-wrapper">
-                <div class="summary-product-image summary-product-tile">
-                    <img src="/images/1Les-Paul-Classic.png" alt="les paul classic">
-                    <ul class="summary-product-details">
-                        <li>GIBSON 2020</li>
-                        <li>LES PAUL CLASSIC</li>
-                        <li>COLOUR: NAVY</li>
-                        <li>QTY:1</li>
-                    </ul>
-                    <ul class="summary-product-price">
-                        <li>$2,440.00</li>
-                    </ul>
-                </div>
-                <div class="summary-product-image summary-product-tile">
-                    <img src="/images/1Les-Paul-Classic.png" alt="les paul classic">
-                    <ul class="summary-product-details">
-                        <li>GIBSON 2020</li>
-                        <li>LES PAUL CLASSIC</li>
-                        <li>COLOUR: NAVY</li>
-                        <li>QTY:1</li>
-                    </ul>
-                    <ul class="summary-product-price">
-                        <li>$2,440.00</li>
-                    </ul>
-                </div>
-                <div class="summary-product-image summary-product-tile">
-                    <img src="/images/1Les-Paul-Classic.png" alt="les paul classic">
-                    <ul class="summary-product-details">
-                        <li>GIBSON 2020</li>
-                        <li>LES PAUL CLASSIC</li>
-                        <li>COLOUR: NAVY</li>
-                        <li>QTY:1</li>
-                    </ul>
-                    <ul class="summary-product-price">
-                        <li>$2,440.00</li>
-                    </ul>
-                </div>
-            </div>
+    <!-- ORDER SUMMARY HEADER -->
+    <div class="order-summary-container">
+        <h3 class="summary-header">ORDER SUMMARY</h3>
 
-    <!-- ORDER SUMMARY FOOTER -->   
-            <div class="checkout-summary-footer">
-                <ul class="order-summary--shipping">
-                    <li>SHIPPING</li>
-                    <li>FREE</li>
+        <!-- CART ITEM WRAPPERS -->
+        <div class="summary-item-wrapper">
+            <div class="summary-product-image summary-product-tile">
+                <img src="/images/1Les-Paul-Classic.png" alt="les paul classic">
+                <ul class="summary-product-details">
+                    <li>GIBSON 2020</li>
+                    <li>LES PAUL CLASSIC</li>
+                    <li>COLOUR: NAVY</li>
+                    <li>QTY:1</li>
                 </ul>
-                <ul class="order-summary--total">
-                    <li>TOTAL</li>
-                    <li>$8,620.00</li>
+                <ul class="summary-product-price">
+                    <li>$2,440.00</li>
+                </ul>
+            </div>
+            <div class="summary-product-image summary-product-tile">
+                <img src="/images/1Les-Paul-Classic.png" alt="les paul classic">
+                <ul class="summary-product-details">
+                    <li>GIBSON 2020</li>
+                    <li>LES PAUL CLASSIC</li>
+                    <li>COLOUR: NAVY</li>
+                    <li>QTY:1</li>
+                </ul>
+                <ul class="summary-product-price">
+                    <li>$2,440.00</li>
+                </ul>
+            </div>
+            <div class="summary-product-image summary-product-tile">
+                <img src="/images/1Les-Paul-Classic.png" alt="les paul classic">
+                <ul class="summary-product-details">
+                    <li>GIBSON 2020</li>
+                    <li>LES PAUL CLASSIC</li>
+                    <li>COLOUR: NAVY</li>
+                    <li>QTY:1</li>
+                </ul>
+                <ul class="summary-product-price">
+                    <li>$2,440.00</li>
                 </ul>
             </div>
         </div>
 
+        <!-- ORDER SUMMARY FOOTER -->
+        <div class="checkout-summary-footer">
+            <ul class="order-summary--shipping">
+                <li>SHIPPING</li>
+                <li>FREE</li>
+            </ul>
+            <ul class="order-summary--total">
+                <li>TOTAL</li>
+                <li>$8,620.00</li>
+            </ul>
+        </div>
+    </div>
