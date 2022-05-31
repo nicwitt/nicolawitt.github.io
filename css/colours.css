@@ -18,7 +18,6 @@
     --dot-peach: #E89279;
 }
 
-
 /* -------------------MAIN-------------------*/
 body{
     background: linear-gradient(120deg, rgba(0,0,0,1) 0%, rgba(6,25,29,1) 77%, rgba(19,85,99,1) 92%, rgba(34,150,175,1) 100%) !important;
@@ -33,8 +32,8 @@ a:hover{
 
 /* NAVMAIN */
 nav{
-    background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 58%, rgba(0,0,0,0.8057598039215687) 100%);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 nav a{
@@ -48,12 +47,22 @@ nav .drop-down{
     opacity: 70%;
 }
 
+.dropdown-content{
+    background: linear-gradient(180deg, rgba(0,0,0,1) 58%, rgba(0,0,0,0.8057598039215687) 100%);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
 /* -------------------SIDENAV-------------------*/
 
 #sidenav{
     background: linear-gradient(120deg, rgba(0,0,0,1) 0%, rgba(6,25,29,1) 77%, rgba(19,85,99,1) 92%, rgba(34,150,175,1) 100%) !important;
-
 }
+
+.search-container input[type=text] {
+    border-bottom: 1px solid white;
+    background-color: #00000000;
+    color: var(--white);
+  }
 
 /* -------------------BODY-------------------*/
 
@@ -77,8 +86,17 @@ body{
 /* -------------------PRODUCT PAGE-------------------*/
 
 /* BREADCRUMBS */
-.previous-page{
+.breadcrumbs{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.previous-page a{
     color: var(--grey);
+}
+
+.previous-page a:hover{
+    color: var(--myBlueLight);
 }
 
 /* FILTER DOTS */

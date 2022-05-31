@@ -11,14 +11,7 @@
     <script>
         $(document).ready(function () {
 
-            $('#navbar').load("nav-bar.html");
-
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-
-            $('#footer').load("footer.html");
+            $('#navbar').load("navbar-checkout.html");
 
         });
     </script>
@@ -27,10 +20,68 @@
 <body>
 
 <!-- ----------------------NAVBAR----------------------- -->
-    <div id="navbar"></div>
+    <!-- <div id="navbar"></div> -->
 
-    
 
-<!-- ----------------------FOOTER----------------------- -->
+<!-- ----------------------CHECKOUT CONTAINER----------------------- -->
 
-    <div id="footer"></div>
+
+
+<!-- ----------------------ORDER SUMMERY TILE----------------------- -->
+
+    <!-- ORDER SUMMARY HEADER -->
+    <div class="order-summary-container">
+        <h3 class="summary-header">ORDER SUMMARY</h3>
+
+        <!-- CART ITEM WRAPPERS -->
+        <div class="summary-item-wrapper">
+            <div class="summary-product-image summary-product-tile">
+                <img src="/images/1Les-Paul-Classic.png" alt="les paul classic">
+                <ul class="summary-product-details">
+                    <li>GIBSON 2020</li>
+                    <li>LES PAUL CLASSIC</li>
+                    <li>COLOUR: NAVY</li>
+                    <li>QTY:1</li>
+                </ul>
+                <ul class="summary-product-price">
+                    <li>$2,440.00</li>
+                </ul>
+            </div>
+            <div class="summary-product-image summary-product-tile">
+                <img src="/images/1Les-Paul-Classic.png" alt="les paul classic">
+                <ul class="summary-product-details">
+                    <li>GIBSON 2020</li>
+                    <li>LES PAUL CLASSIC</li>
+                    <li>COLOUR: NAVY</li>
+                    <li>QTY:1</li>
+                </ul>
+                <ul class="summary-product-price">
+                    <li>$2,440.00</li>
+                </ul>
+            </div>
+            <div class="summary-product-image summary-product-tile">
+                <img src="/images/1Les-Paul-Classic.png" alt="les paul classic">
+                <ul class="summary-product-details">
+                    <li>GIBSON 2020</li>
+                    <li>LES PAUL CLASSIC</li>
+                    <li>COLOUR: NAVY</li>
+                    <li>QTY:1</li>
+                </ul>
+                <ul class="summary-product-price">
+                    <li>$2,440.00</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ORDER SUMMARY FOOTER -->
+        <div class="checkout-summary-footer">
+            <ul class="order-summary--shipping">
+                <li>SHIPPING</li>
+                <li>FREE</li>
+            </ul>
+            <ul class="order-summary--total">
+                <li>TOTAL</li>
+                <li>$8,620.00</li>
+            </ul>
+        </div>
+    </div>

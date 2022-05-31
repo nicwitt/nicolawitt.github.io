@@ -7,38 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/b9def743fc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <title>Document</title>
 </head>
 
 <body>
 
-    <img>
-
     <!-- ----------------------TOP STACK & DROPDOWN----------------------- -->
 
+    <!-- X ICON -->
     <div id="sidenav">
-
-        <div class="x-mark">
-            <i class="fa-regular fa-xmark"></i>
+        <div class="close-mark">
+            <i class="fa-regular fa-xmark" style="font-size: 2em; color:white;"></i>
         </div>
 
-        <ul class="sidenav-top"><hr>
-            <li><a href="#">Shop<ion-icon name="add-outline"></ion-icon></a>
-                <ul class="shop-dropdown">
-                    <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Guitars</a></li>
-                    <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Drums</a></li>
-                    <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Live Sound</a></li>
-                    <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Studio</a></li>
-                    <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Keyboards</a></li>
-                    <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Sheet Music</a></li>
-                    <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Accessories</a></li>
-                </ul>
-            </li><hr>
-            <li><a href="#">Visit Us</a></li><hr>
-            <li><a href="#">Reviews</a></li><hr>
-        </ul>
-
+        <!-- SIDE-NAV SHOP -->
+        <div class="sidenav-top"><hr>
+            <ul>
+                <li><a class="shop-dropdown-parent" href="#">Shop<i class="fa-regular fa-plus"></i></a></li>
+                    <!-- SHOP DROP-DOWN ON CLICK -->
+                    <ul class="shop-dropdown-child">
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Guitars</a></li>
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Drums</a></li>
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Live Sound</a></li>
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Studio</a></li>
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Keyboards</a></li>
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Sheet Music</a></li>
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Accessories</a></li>
+                    </ul>
+                </li><hr>
+                <!-- VISIT US & REVIEWS -->
+                <li><a href="#">Visit Us</a></li><hr>
+                <li><a href="#">Reviews</a></li><hr>
+            </ul>
+        </div>
         <!-- ----------------------SIDE NAV CENTER CONTENT----------------------- -->
 
         <ul class="cluster-one">
@@ -56,11 +60,10 @@
 
         <!-- ----------------------SEARCH FUNCTION----------------------- -->
 
-        <div class="sidenav-search">
-            <span><u>Search</u>
-                <ion-icon name="search-outline"></ion-icon>
-            </span>
-        </div>
+        <div class="search-container">
+              <input type="text" placeholder="Search.." name="search">
+              <a href="#"><ion-icon name="search-outline"></ion-icon></a>
+          </div>
 
         <hr>
 
@@ -72,10 +75,6 @@
             <li><a href="#">Twitter</a></li>
         </ul>
     </div>
-
-
-
-
 </body>
 
 </html>

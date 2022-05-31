@@ -3,14 +3,14 @@
     --primary-font: "Helvetica", sans-serif;
     --secondary-font: "Helvetica Neue", sans-serif;
 
-    --xxl-text: 220%;
-    --xl-text: 200%;
-    --l-text: 160%;
-    --nav-text: 140%;
-    --regular-text: 120%;
-    --small-text: 110%;
-    --xs-text: 100%;
-    --xxs-text: 80%;
+    --xxl-text: 3rem;
+    --xl-text: 2.4rem;
+    --l-text: 1.6rem;
+    --nav-text: 1.4rem;
+    --regular-text: 1.2rem;
+    --small-text: 1em;
+    --xs-text: 0.9em;
+    --xxs-text: 0.8em;
 }
 
 body {
@@ -59,7 +59,7 @@ a{
 
 li{
     font-family: var(--primary-font);
-    font-size: var(--small-text);
+    font-size: var(--regular-text);
 }
 
 span{
@@ -75,6 +75,10 @@ nav a{
     font-size: var(--regular-text)
 }
 
+.dropdown-content a{
+    font-size: var(--regular-text);
+}
+
 /* -------------------SIDENAV------------------- */
 
 #sidenav a{
@@ -86,22 +90,29 @@ nav a{
 }
 
 #sidenav .shop-dropdown a{
-    font-size: var(--regular-text);
+    font-size: var(--nav-text);
 }
+
+.search-container input[type=text] {
+    font-size: var(--nav-text);
+  }
 
 /* -------------------PRODUCT PAGE------------------- */
 
+.previous-page a{
+    font-size: var(--l-text);
+}
 
 .product-brand{
-    font-size: var(--xs-text);
+    font-size: var(--small-text);
 }
 
 .product-name{
-    font-size: var(--small-text);
+    font-size: var(--regular-text);
 }
 
 .product-price{
-    font-size: var(--small-text);
+    font-size: var(--regular-text);
 }
 
 .sold-out-text{
