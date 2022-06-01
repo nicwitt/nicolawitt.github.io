@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,27 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <title>Navbar Condensed</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Navbar</title>
 </head>
+
 <body>
+<!-- ------------TOP NAV W/ LOGO------------ -->
     <nav id="nav-condensed">
-        <div class="top-nav-condensed">
-            <ul>
-                <li><a href="#"><u>MENU</u>
-                        <ion-icon class="hamburger" name="menu-outline"></ion-icon>
-                    </a></li>
-            </ul>
-            <img src="/images/nav-logo.png" alt=logo class="logo">
-            <ul class="r">
-                <li><a href="#"><u>SEARCH</u>
-                        <ion-icon name="search-outline"></ion-icon>
-                    </a></li>
-                <li><a href="shopping-cart.html"><u>CART</u>
-                        <ion-icon name="cart-outline"></ion-icon>
-                    </a></li>
-            </ul>
+        <div class="topnav">
+            <!-- LOGO -->
+            <div class="topnav-centered">
+                <a href="#home.html" class="active"><img src="/images/nav-logo.png" alt=logo class="logo"></a>
+            </div>
+            <!-- LEFT ALIGNED ITEMS -->
+            <a class="topnav-left" href="#"><u>MENU</u></a>
+            <!-- RIGHT ALIGNED ITEMS -->
+            <div class="topnav-right">
+                <a href="#"><u>SEARCH</u></a>
+                <a href="shopping-cart.html"><u>CART</u></a>
+            </div>
         </div>
     </nav>
 </body>
+
 </html>

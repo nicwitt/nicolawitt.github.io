@@ -16,11 +16,20 @@
     }
 }
 
-/* PRODUCT PAGE PHONE DISPLAY MEDIA QUERY */
+/* BREADCRUMBS */
 @media screen and (max-width: 600px) {
-    .breadcrumbs h3{
-        font-size: var(--s-text);
-    }
+
+.breadcrumbs h3{
+    font-size: var(--s-text);
+}
+
+.breadcrumbs .previous-page:not(:first-child){
+    display: none;
+}
+}
+
+/* PRODUCT PAGE PHONE DISPLAY */
+@media screen and (max-width: 600px) {
     
     .filter-container{
         display:none;
@@ -32,5 +41,38 @@
 
     .product-gallery p{
         font-size: var(--xs-text);
+    }
+}
+
+/* SHOPPING CART PHONE DISPLAY */
+
+@media screen and (max-width: 600px) {
+
+    .checkout-summary{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        float: top;
+        left: 3em;
+        padding-top: 2.2em;
+        font-size: var(--xss-text);
+    }
+
+    .checkout-scroll h2{
+        margin-bottom: 4em;
+    }
+
+    .checkout-button{
+        margin-top: 0.5em;
+        vertical-align: middle;
+    }
+
+}
+
+/* CHECKOUT PHONE DISPLAY */
+@media screen and (max-width: 600px) {
+    .order-summary-container{
+        display: none;
     }
 }

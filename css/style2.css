@@ -2,9 +2,9 @@
     --white: white;
     --grey: #9F9F9F;
     --black: black;
-    --myBlueLight: #2F7493; 
+    --myBlueLight: #2F7493;
     --myBlueDark: #0F3A43;
-    --dot-dark-dark-blue: #121C2F; 
+    --dot-dark-dark-blue: #121C2F;
     --dot-dark-blue: #2F7493;
     --dot-light-blue: #51AFDB;
     --dot-olive: #77774B;
@@ -36,12 +36,21 @@ body {
     color: var(--white)
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--white);
 }
+
+h1 {
+    font-size: var(--xl-text)
+}
+
 html {
     box-sizing: border-box;
+}
+
+h2{
+    font-size: var(--l-text);
 }
 
 *,
@@ -51,126 +60,77 @@ html {
 }
 
 
-body{
-    background: linear-gradient(120deg, rgba(0,0,0,1) 0%, rgba(6,25,29,1) 77%, rgba(19,85,99,1) 92%, rgba(34,150,175,1) 100%) !important;
+body {
+    background: linear-gradient(120deg, rgba(0, 0, 0, 1) 0%, rgba(6, 25, 29, 1) 77%, rgba(19, 85, 99, 1) 92%, rgba(34, 150, 175, 1) 100%) !important;
     color: var(--white);
 }
 
-.product-row{
+
+
+.feature-container{
+    position: relative;
     display: flex;
-    overflow-x: auto;
-    overflow-y: scroll;
-    float: right;
-}
-
-.product-row-tile{
-    margin: 0.5rem;
-    height: 18rem;
-    margin-top: 9rem;
-    padding: 0rem;
-    list-style: none;
-    width: 11rem;
-    margin-bottom: 4rem;
-    color: #CECECE;
-    border: 1px solid white;
-    background-color: black;
-}
-
-.product-row img{
-    height: 25rem;
-    padding: 0rem 1rem;
-    margin-top: -7.5rem;
-    margin-left: 0rem;
-}
-
-.tile-buttons{
-    /* border: 1px solid white;
-    background-color: black; */
-    font-size: 1rem
-}
-
-.tile-buttons span{
-    text-align: center;
+    flex-direction: column;
+    height: auto;
     align-items: center;
-    color: green;
-    padding-left: 1rem;
 }
 
-/* Add a black background color to the top navigation */
-.topnav {
+.feature-header{
+   margin-top: 1em;
+   width: 100vw;
+}
+
+.feature-header h2{
+    padding: 0.5em;
+}
+
+.feature-header i{
+    margin: 0.5em;
+}
+
+.product-tile-wrap {
     position: relative;
-    background-color: #333;
-    height: 18vh;
-    overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Centered section inside the top navigation */
-  .topnav-centered img {
-    max-width: 40%;
-    float: none;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  /* Right-aligned section inside the top navigation */
-  .topnav-right {
-    float: right;
-  }
-  
-  /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
-  @media screen and (max-width: 600px) {
-    .topnav a, .topnav-right {
-      float: none;
-      display: block;
-    }
-  
-    .topnav-centered a {
-      position: relative;
-      top: 0;
-      left: 0;
-      transform: none;
-    }
-  }
-
-.dropdown-categories>ul {
-    width: 100%;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-    position: absolute;
-    top: 85px;
-}
-
-.dropdown-categories li {
-    margin: 25px;
-}
-
-/* GUITARS DROP DOWN MENU ON HOVER */
-.dropdown-trigger {
-    position: relative;
-}
-
-.dropdown-content {
-    position: absolute;
     display: flex;
-    flex-direction: row;
-    width: 100vw;
-    /* makes it dissapear until hovered over */
-    transform: scale(0);
+    padding-left: 20rem;
+    max-width: 100vw;
+    overflow: auto;
+    height: 25em;
 }
 
-.dropdown-trigger:hover .dropdown-content {
-    transform: scale(1);
+.tile-container {
+    background-color: black;
+    border: 1px solid white;
 }
+
+.product-tile-img i{
+    font-size: 4em;
+}
+
+.outside-box-reviews{
+    height: 20.5rem;
+    width: 17rem;
+    margin-right: 2em;
+    border-left: 1px solid white;
+}
+
+.outside-box-text{
+    margin-left: 1.2em;
+    line-height: 1.2em;
+}
+
+.reviewer-name{
+    color: var(--grey);
+    margin-bottom: 0.5em;
+}
+
+.product-tile-m {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    height: 14rem;
+    width: 14rem;
+    justify-content: center;
+    align-items: center;
+}
+

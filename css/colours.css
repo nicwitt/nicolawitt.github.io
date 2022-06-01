@@ -80,17 +80,12 @@ body{
 }
 
 
-/* -------------------HOME-------------------*/
-.photo-gallery{
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 21%, rgba(0,0,0,0) 100%);
-}
+/* -------------------HOME-------------------*/   
 
-.product-row a:hover {
+.tile-container:hover{
     background: linear-gradient(#000000, #29769d);
     color: var(--white);
-}   
-
+}
 
 /* -------------------PRODUCT PAGE-------------------*/
 
@@ -109,6 +104,11 @@ body{
 }
 
 /* FILTER DOTS */
+
+.dot-dark-dark-blue{
+    background-color: var(--dot-dark-dark-blue);
+    
+}
 
 .dot-dark-blue{
     background-color: var(--dot-dark-blue);
@@ -228,8 +228,7 @@ body{
     color: var(--grey);
 }
 
-.dot-dark-dark-blue{
-    background-color: var(--dot-dark-dark-blue);
+.dot-border{
     border: 2px solid white;
 }
 
