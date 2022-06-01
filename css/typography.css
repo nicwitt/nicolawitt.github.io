@@ -6,7 +6,7 @@
     --xxl-text: 3rem;
     --xl-text: 2rem;
     --l-text: 1.6rem;
-    --nav-text: 1.4rem;
+    --nav-text: 1.3rem;
     --regular-text: 1.1rem;
     --small-text: 1em;
     --xs-text: 0.8em;
@@ -80,11 +80,11 @@ label{
 
 nav a{
     text-decoration: none;
-    font-size: var(--regular-text)
+    font-size: var(--nav-text);
 }
 
 .dropdown-content a{
-    font-size: var(--regular-text);
+    font-size: var(--nav-text);
 }
 
 /* -------------------SIDENAV------------------- */
@@ -107,8 +107,8 @@ nav a{
 
 /* -------------------PRODUCT PAGE------------------- */
 
-.previous-page a{
-    font-size: var(--l-text);
+.breadcrumbs h3{
+    font-size: var(--l-text)
 }
 
 .product-brand{

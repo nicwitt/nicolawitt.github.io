@@ -100,7 +100,7 @@ body{
     border-bottom: 1px solid white;
 }
 
-.previous-page a{
+.previous-page {
     color: var(--grey);
 }
 

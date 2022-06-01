@@ -95,3 +95,82 @@ body{
     color: green;
     padding-left: 1rem;
 }
+
+/* Add a black background color to the top navigation */
+.topnav {
+    position: relative;
+    background-color: #333;
+    height: 18vh;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Centered section inside the top navigation */
+  .topnav-centered img {
+    max-width: 40%;
+    float: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Right-aligned section inside the top navigation */
+  .topnav-right {
+    float: right;
+  }
+  
+  /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav-right {
+      float: none;
+      display: block;
+    }
+  
+    .topnav-centered a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  }
+
+.dropdown-categories>ul {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 85px;
+}
+
+.dropdown-categories li {
+    margin: 25px;
+}
+
+/* GUITARS DROP DOWN MENU ON HOVER */
+.dropdown-trigger {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    /* makes it dissapear until hovered over */
+    transform: scale(0);
+}
+
+.dropdown-trigger:hover .dropdown-content {
+    transform: scale(1);
+}

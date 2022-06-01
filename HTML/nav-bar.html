@@ -9,52 +9,47 @@
     <link rel="stylesheet" href="/css/style.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
+    <title>Navbar</title>
 </head>
 
 <body>
-
-    <!-- ----------------------NAVBAR TOP ROW----------------------- -->
-    <nav id="nav">
-        <div class="top-nav">
-            <ul>
-                <!-- MENU -->
-                <li><a href="#"><u>MENU</u></a></li>
-            </ul>
+<!-- ------------TOP NAV W/ LOGO------------ -->
+    <nav>
+        <div class="topnav">
             <!-- LOGO -->
-            <a href="home.html"><img src="/images/nav-logo.png" alt=logo class="logo"></a>
-            <ul class="nav-right">
-                <!-- SEARCH & CART -->
-                <!-- <li class="nav-search">
-                    <input class="site-search" type="text" placeholder="SEARCH">
-                    <ion-icon name="search-outline"></ion-icon>
-                </li> -->
-                <li><a href="#"><u>SEARCH</u></a></li>
-                <li><a href="shopping-cart.html"><u>CART</u>
-                </li>
-            </ul>
+            <div class="topnav-centered">
+                <a href="#home.html" class="active"><img src="/images/nav-logo.png" alt=logo class="logo"></a>
+            </div>
+            <!-- LEFT ALIGNED ITEMS -->
+            <a class="topnav-left" href="#"><u>MENU</u></a>
+            <!-- RIGHT ALIGNED ITEMS -->
+            <div class="topnav-right">
+                <a href="#"><u>SEARCH</u></a>
+                <a href="shopping-cart.html"><u>CART</u></a>
+            </div>
         </div>
 
-        <!-- ----------------------NAVBAR BOTTOM ROW----------------------- -->
-        <div class="dropdown-categories">
-            <ul>
-                <li class="dropdown-trigger"><a href="product-page.html">GUITARS</a>
-                    <ion-icon name="chevron-down-outline"></ion-icon>
-                    <!-- DROP-DOWN CATEGORIES ON HOVER -->
-                    <ul class="dropdown-content">
-                        <li><a href="product-page.html">ELECTRIC GUITARS</a></li>
-                        <li><a href="#">ACCOUSTIC GUITARS</a></li>
-                        <li><a href="#">BASS GUITARS</a></li>
-                        <li><a href="#">FOLK INSTRUMENTS</a></li>
-                        <li><a href="#">STRINGS</a></li>
-                    </ul>
-                <li><a href="#">DRUMS<ion-icon name="chevron-down-outline"></ion-icon></a></li>
-                <li><a href="#">LIVE SOUND<ion-icon name="chevron-down-outline"></ion-icon></a></li>
-                <li><a href="#">STUDIO<ion-icon name="chevron-down-outline"></ion-icon></a></li>
-                <li><a href="#">KEYBOARD<ion-icon name="chevron-down-outline"></ion-icon></a></li>
-                <li><a href="#">SHEET MUSIC<ion-icon name="chevron-down-outline"></ion-icon></a></li>
-                <li><a href="#">ACCESSORIES<ion-icon name="chevron-down-outline"></ion-icon></a></li>
-            </ul>
+<!-- ------------TOP NAV W/ DROP-DOWNS------------ -->
+        <div class="bottom-nav">
+            <div class="dropdown-categories">
+                <ul>
+                    <li class="dropdown-trigger"><a class="dropdown" href="product-page.html">GUITARS<ion-icon name="chevron-down-outline"></ion-icon></a>
+                        <!-- DROP-DOWN CATEGORIES ON HOVER -->
+                        <ul class="dropdown-content">
+                            <li><a href="product-page.html">ELECTRIC GUITARS</a></li>
+                            <li><a href="#">ACCOUSTIC GUITARS</a></li>
+                            <li><a href="#">BASS GUITARS</a></li>
+                            <li><a href="#">FOLK INSTRUMENTS</a></li>
+                            <li><a href="#">STRINGS</a></li>
+                        </ul>
+                    <li><a class="dropdown" href="#">DRUMS<ion-icon name="chevron-down-outline"></ion-icon></a></li>
+                    <li><a class="dropdown" href="#">LIVE SOUND<ion-icon name="chevron-down-outline"></ion-icon></a></li>
+                    <li><a class="dropdown" href="#">STUDIO<ion-icon name="chevron-down-outline"></ion-icon></a></li>
+                    <li><a class="dropdown" href="#">KEYBOARD<ion-icon name="chevron-down-outline"></ion-icon></a></li>
+                    <li><a class="dropdown" href="#">SHEET MUSIC<ion-icon name="chevron-down-outline"></ion-icon></a></li>
+                    <li><a class="dropdown" href="#">ACCESSORIES<ion-icon name="chevron-down-outline"></ion-icon></a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 </body>

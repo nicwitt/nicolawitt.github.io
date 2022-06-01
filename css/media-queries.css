@@ -1,0 +1,36 @@
+/* NAV BAR RESPONSE */
+@media screen and (max-width: 600px) {
+
+    .topnav a {
+        float: none;
+        display: inline-flex;
+        vertical-align: middle;
+    }
+
+    .topnav-centered img{
+        display: none;
+    }
+
+    .dropdown-categories{
+        display: none;
+    }
+}
+
+/* PRODUCT PAGE PHONE DISPLAY MEDIA QUERY */
+@media screen and (max-width: 600px) {
+    .breadcrumbs h3{
+        font-size: var(--s-text);
+    }
+    
+    .filter-container{
+        display:none;
+    }
+
+    .gallery-tile{
+        width: 45vw;
+    }
+
+    .product-gallery p{
+        font-size: var(--xs-text);
+    }
+}
