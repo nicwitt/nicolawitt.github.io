@@ -32,6 +32,10 @@ a:hover{
     color: var(--grey);
 }
 
+.bg-gradient:hover{
+    background: linear-gradient(#000000, #29769d);
+    color: var(--white);
+}
 
 /* -------------------NAVBAR-------------------*/
 
@@ -169,6 +173,47 @@ body{
     opacity: 32%;
 }
 
+/* -------------------PRODUCT LISTING-------------------*/
+
+.listing-gallery{
+    background: rgb(55,140,180);
+    background: radial-gradient(circle, rgba(55,140,180,1) 0%, rgba(39,95,121,1) 21%, rgba(0,0,0,1) 77%); 
+    background-position: -130px;   
+}
+
+.listing-scroll img{
+    background: var(--black);
+    opacity: 60%;
+}
+
+.listing-scroll img:hover{
+    background: linear-gradient(#000000, #29769d);
+    opacity: 100%;
+}
+
+.buttons-tile{
+    background: var(--black);
+}
+
+.quantity-listing{
+    background: var(--black);
+}
+
+.buttons-tile:hover{
+    background: linear-gradient(#000000, #29769d);
+    color: var(--white);
+}
+
+.recommend-tile{
+    background: var(--black);
+}
+
+.recommend-tile:hover{
+    background: linear-gradient(#000000, #29769d);
+    color: var(--white);
+}
+
+
 /* -------------------ADD TO CART-------------------*/
 .add-to-cart{
     background-color: black;
@@ -207,6 +252,13 @@ body{
 .checkout-button:hover{
     background: linear-gradient(#000000, #29769d);
     color: var(--white);
+}
+
+/* -------------------CHECKOUT-------------------*/
+
+.order-summary-container{
+    border: 1.5px solid white;
+    background: var(--black);
 }
 
 /* -------------------FOOTER-------------------*/

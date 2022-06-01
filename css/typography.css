@@ -67,6 +67,14 @@ span{
     font-size: var(--small-text);
 }
 
+input{
+    font-size: var(--regular-text);
+}
+
+label{
+    font-size: var(--regular-text);
+}
+
 /* -------------------NAVBAR------------------- */
 
 
@@ -117,6 +125,13 @@ nav a{
 
 .sold-out-text{
     font-size: var(--regular-text);
+}
+
+/* -------------------CHECKOUT------------------- */
+
+
+.order-summary-container li{
+    font-size: var(--small-text);
 }
 
 /* -------------------FOOTER------------------- */

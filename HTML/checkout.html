@@ -22,7 +22,7 @@
 <body>
 
     <!-- ----------------------NAVBAR----------------------- -->
-    <!-- <div id="navbar"></div> -->
+    <div id="navbar"></div>
 
 
     <!-- ----------------------CHECKOUT CONTAINER----------------------- -->
@@ -36,7 +36,7 @@
         </div>
 
         <!-- SHIPPING FORM -->
-        <form name="checkoutorm" action="payment.html" onsubmit="return validateForm()" method="post">
+        <form name="checkout-form" action="payment.html" onsubmit="return validateForm()" method="post">
             <div class="shipping-details">
                 <h3 class="shipping-details-header">SHIP TO</h3>
                 <input class="form-input-shipping" type="text" placeholder="Full Name">
@@ -72,7 +72,7 @@
             </div>
 
             <!-- SUBMIT BUTTON -->
-            <button type="submit">CONFIRM PAYMENT</button>
+            <button class="confirm-payment-button" type="submit">CONFIRM PAYMENT</button>
         </form>
     </div>
 
@@ -83,33 +83,11 @@
         <h3 class="summary-header">ORDER SUMMARY</h3>
 
         <!-- CART ITEM WRAPPERS -->
-        <div class="summary-item-wrapper">
-            <div class="summary-product-image summary-product-tile">
-                <img src="/images/1Les-Paul-Classic.png" alt="les paul classic">
-                <ul class="summary-product-details">
-                    <li>GIBSON 2020</li>
-                    <li>LES PAUL CLASSIC</li>
-                    <li>COLOUR: NAVY</li>
-                    <li>QTY:1</li>
-                </ul>
-                <ul class="summary-product-price">
-                    <li>$2,440.00</li>
-                </ul>
-            </div>
-            <div class="summary-product-image summary-product-tile">
-                <img src="/images/1Les-Paul-Classic.png" alt="les paul classic">
-                <ul class="summary-product-details">
-                    <li>GIBSON 2020</li>
-                    <li>LES PAUL CLASSIC</li>
-                    <li>COLOUR: NAVY</li>
-                    <li>QTY:1</li>
-                </ul>
-                <ul class="summary-product-price">
-                    <li>$2,440.00</li>
-                </ul>
-            </div>
-            <div class="summary-product-image summary-product-tile">
-                <img src="/images/1Les-Paul-Classic.png" alt="les paul classic">
+        <div class="summary-item-container">
+            <div class="summary-item-wrapper">
+                <div class="summary-product-image summary-product-tile">
+                    <img src="/images/1Les-Paul-Classic.png" alt="les paul classic">
+                </div>
                 <ul class="summary-product-details">
                     <li>GIBSON 2020</li>
                     <li>LES PAUL CLASSIC</li>
@@ -121,16 +99,45 @@
                 </ul>
             </div>
         </div>
-
-        <!-- ORDER SUMMARY FOOTER -->
-        <div class="checkout-summary-footer">
-            <ul class="order-summary--shipping">
-                <li>SHIPPING</li>
-                <li>FREE</li>
+        <div class="summary-item-wrapper">
+            <div class="summary-product-image summary-product-tile">
+                <img src="/images/Jazmaster-Gold.png" alt="les paul classic">
+            </div>
+            <ul class="summary-product-details">
+                <li>FENDER</li>
+                <li>JAZZMASTER GOLD</li>
+                <li>COLOUR: CREAM</li>
+                <li>QTY:1</li>
             </ul>
-            <ul class="order-summary--total">
+            <ul class="summary-product-price">
+                <li>$2,590.00</li>
+            </ul>
+        </div>
+        <div class="summary-item-wrapper">
+            <div class="summary-product-image summary-product-tile">
+                <img src="/images/American-Classic.png" alt="les paul classic">
+            </div>
+            <ul class="summary-product-details">
+                <li>SOLAR GUITARS</li>
+                <li>AMERICAN CLASSIC</li>
+                <li>COLOUR: SILVER</li>
+                <li>QTY:1</li>
+            </ul>
+            <ul class="summary-product-price">
+                <li>$2,440.00</li>
+            </ul>
+        </div>
+        <div class="checkout-summary-footer">
+            <ul class="order-summary--title">
+                <li>SHIPPING</li>
                 <li>TOTAL</li>
+            </ul>
+            <ul class="order-summary--price">
+                <li>FREE</li>
                 <li>$8,620.00</li>
             </ul>
         </div>
+    </div>
+    <!-- ORDER SUMMARY FOOTER -->
+
     </div>
