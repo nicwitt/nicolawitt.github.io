@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/b9def743fc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
@@ -22,13 +24,13 @@
 <body>
 
     <!-- ----------------------NAVBAR----------------------- -->
-    <!-- <div id="navbar"></div> -->
+    <div id="navbar"></div>
 
     <!-- ----------------------PAYMENT INFORMATION FIELD----------------------- -->
 
     <!-- BREADCRUMBS -->
-    <div class="payment-field">
-        <div class="breadcrumbs">
+    <div class="checkout-container container-payment">
+        <div class="checkout-breadcrumbs">
             <h3 class="previous-page"><a href="#">CART</a>
                 <ion-icon name="chevron-forward-outline"></ion-icon>
             </h3>
@@ -36,36 +38,34 @@
                 <ion-icon name="chevron-forward-outline"></ion-icon>
             </h3>
             <h3 class="current-page"><a href="#">PAYMENT</a>
-                <ion-icon name="chevron-forward-outline"></ion-icon>
             </h3>
         </div>
-
         <!-- PAYMENT METHOD RADIO BOX -->
         <div class="payment-payment-method">
             <h3 class="payment-method-header">PAYMENT METHOD</h3>
             <input type="radio" id="credit-card" name="payment-method" value="CREDIT-CARD">
             <label for="credit-card">Credit Card</label><br>
             <input type="radio" id="paypal" name="payment-method" value="PAYPAL">
-            <label for="paypal">Paypal</label><br>
+            <label for="paypal">Paypal</label><i class="fa-regular fa-arrow-up-right-from-square"></i><br>
             <input type="radio" id="afterpay" name="payment-method" value="AFTERPAY">
-            <label for="afterpay">Afterpay</label>
+            <label for="afterpay">Afterpay</label><i class="fa-regular fa-arrow-up-right-from-square"></i><br>
             <input type="radio" id="zippay" name="payment-method" value="ZIPPAY">
-            <label for="zippay">ZipPay</label>
+            <label for="zippay">ZipPay</label><i class="fa-regular fa-arrow-up-right-from-square"></i><br>
         </div>
 
         <!-- PAYMENT DETAILS FORM FIELDS -->
         <form action="checkout-confirmation.html" method="POST">
             <div class="payment-details">
                 <h3 class="payment-details-header">PAYMENT DETAILS</h3>
-                <input class="form-input-payment" type="text" placeholder="Card Number">
-                <input class="form-input-payment-details" type="text" placeholder="MM / YY">
-                <input class="form-input-payment-details" type="text" placeholder="CVV">
+                <input class="form-input" type="text" placeholder="Card Number">
+                <input class="form-input" type="text" placeholder="MM / YY">
+                <input class="form-input" type="text" placeholder="CVV">
             </div>
             <!-- SUBMIT BUTTON -->
-            <button type="submit">COMPLETE PURCHASE</button>
+            <button class=submit-button type="submit">COMPLETE PURCHASE</button>
         </form>
     </div>
-    
+
 
     <!-- ----------------------ORDER SUMMERY TILE----------------------- -->
 
@@ -74,33 +74,11 @@
         <h3 class="summary-header">ORDER SUMMARY</h3>
 
         <!-- CART ITEM WRAPPERS -->
-        <div class="summary-item-wrapper">
-            <div class="summary-product-image summary-product-tile">
-                <img src="/images/1Les-Paul-Classic.png" alt="les paul classic">
-                <ul class="summary-product-details">
-                    <li>GIBSON 2020</li>
-                    <li>LES PAUL CLASSIC</li>
-                    <li>COLOUR: NAVY</li>
-                    <li>QTY:1</li>
-                </ul>
-                <ul class="summary-product-price">
-                    <li>$2,440.00</li>
-                </ul>
-            </div>
-            <div class="summary-product-image summary-product-tile">
-                <img src="/images/1Les-Paul-Classic.png" alt="les paul classic">
-                <ul class="summary-product-details">
-                    <li>GIBSON 2020</li>
-                    <li>LES PAUL CLASSIC</li>
-                    <li>COLOUR: NAVY</li>
-                    <li>QTY:1</li>
-                </ul>
-                <ul class="summary-product-price">
-                    <li>$2,440.00</li>
-                </ul>
-            </div>
-            <div class="summary-product-image summary-product-tile">
-                <img src="/images/1Les-Paul-Classic.png" alt="les paul classic">
+        <div class="summary-item-container">
+            <div class="summary-item-wrapper">
+                <div class="summary-product-image summary-product-tile">
+                    <img src="/images/1Les-Paul-Classic.png" alt="les paul classic">
+                </div>
                 <ul class="summary-product-details">
                     <li>GIBSON 2020</li>
                     <li>LES PAUL CLASSIC</li>
@@ -112,16 +90,44 @@
                 </ul>
             </div>
         </div>
-
+        <div class="summary-item-wrapper">
+            <div class="summary-product-image summary-product-tile">
+                <img src="/images/Jazmaster-Gold.png" alt="les paul classic">
+            </div>
+            <ul class="summary-product-details">
+                <li>FENDER</li>
+                <li>JAZZMASTER GOLD</li>
+                <li>COLOUR: CREAM</li>
+                <li>QTY:1</li>
+            </ul>
+            <ul class="summary-product-price">
+                <li>$2,590.00</li>
+            </ul>
+        </div>
+        <div class="summary-item-wrapper">
+            <div class="summary-product-image summary-product-tile">
+                <img src="/images/American-Classic.png" alt="les paul classic">
+            </div>
+            <ul class="summary-product-details">
+                <li>SOLAR GUITARS</li>
+                <li>AMERICAN CLASSIC</li>
+                <li>COLOUR: SILVER</li>
+                <li>QTY:1</li>
+            </ul>
+            <ul class="summary-product-price">
+                <li>$2,790.00</li>
+            </ul>
+        </div>
         <!-- ORDER SUMMARY FOOTER -->
         <div class="checkout-summary-footer">
-            <ul class="order-summary--shipping">
+            <ul class="order-summary--title">
                 <li>SHIPPING</li>
-                <li>FREE</li>
-            </ul>
-            <ul class="order-summary--total">
                 <li>TOTAL</li>
+            </ul>
+            <ul class="order-summary--price">
+                <li>FREE</li>
                 <li>$8,620.00</li>
             </ul>
         </div>
     </div>
+</body>

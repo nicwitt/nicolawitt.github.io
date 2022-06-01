@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/b9def743fc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
@@ -36,43 +38,43 @@
         </div>
 
         <!-- SHIPPING FORM -->
-        <form name="checkout-form" action="payment.html" onsubmit="return validateForm()" method="post">
+        <form action="payment.html" method="POST">
             <div class="shipping-details">
                 <h3 class="shipping-details-header">SHIP TO</h3>
-                <input class="form-input-shipping" type="text" placeholder="Full Name">
-                <input class="form-input-shipping" type="text" placeholder="Phone Number">
-                <input class="form-input-shipping" type="text" placeholder="Email">
-                <input class="form-input-shipping" type="text" placeholder="Company">
-                <input class="form-input-shipping" type="text" placeholder="Address">
-                <input class="form-input-shipping" type="text" placeholder="Suburb">
-                <input class="form-input-shipping" type="text" placeholder="State">
-                <input class="form-input-shipping" type="text" placeholder="Postcode">
+                <input class="form-input" type="text" placeholder="Full Name">
+                <input class="form-input" type="text" placeholder="Phone Number">
+                <input class="form-input" type="text" placeholder="Email">
+                <input class="form-input" type="text" placeholder="Company">
+                <input class="form-input" type="text" placeholder="Address">
+                <input class="form-input" type="text" placeholder="Suburb">
+                <input class="form-input" type="text" placeholder="State">
+                <input class="form-input" type="text" placeholder="Postcode">
             </div>
 
             <!-- SHIPPING METHOD RADIO BOXES -->
             <div class="shipping-method">
                 <h3 class="payment-method-header">SHIPPING METHOD</h3>
                 <input type="radio" id="express-postage" name="shipping-method" value="EXPRESS-POST">
-                <label for="express-post">Express Postage [3-5 business days -$9.99]</label><br>
+                <label for="post-preference">Express Postage [3-5 business days -$9.99]</label><br>
                 <input type="radio" id="standard-postage" name="shipping-method" value="STANDARD-POST">
-                <label for="standard-post">Standard Postage [5-7 business days - FREE]</label><br>
+                <label for="post-preference">Standard Postage [5-7 business days - FREE]</label><br>
             </div>
 
             <!-- PAYMENT METHOD RADIO BOXES -->
             <div class="payment-payment-method">
                 <h3 class="payment-method-header">PAYMENT METHOD</h3>
                 <input type="radio" id="credit-card" name="payment-method" value="CREDIT-CARD">
-                <label for="credit-card">Credit Card</label><br>
+                <label for="payment-preference">Credit Card</label><br>
                 <input type="radio" id="paypal" name="payment-method" value="PAYPAL">
-                <label for="paypal">Paypal</label><br>
+                <label for="payment-preference">Paypal</label><i class="fa-regular fa-arrow-up-right-from-square"></i><br>
                 <input type="radio" id="afterpay" name="payment-method" value="AFTERPAY">
-                <label for="afterpay">Afterpay</label>
+                <label for="payment-preference">Afterpay</label><i class="fa-regular fa-arrow-up-right-from-square"></i><br>
                 <input type="radio" id="zippay" name="payment-method" value="ZIPPAY">
-                <label for="zippay">ZipPay</label>
+                <label for="payment-preference">ZipPay</label><i class="fa-regular fa-arrow-up-right-from-square"></i><br>
             </div>
 
             <!-- SUBMIT BUTTON -->
-            <button class="confirm-payment-button" type="submit">CONFIRM PAYMENT</button>
+            <button class=submit-button type="submit">CONFIRM PAYMENT</button>
         </form>
     </div>
 
@@ -124,9 +126,10 @@
                 <li>QTY:1</li>
             </ul>
             <ul class="summary-product-price">
-                <li>$2,440.00</li>
+                <li>$2,790.00</li>
             </ul>
         </div>
+         <!-- ORDER SUMMARY FOOTER -->
         <div class="checkout-summary-footer">
             <ul class="order-summary--title">
                 <li>SHIPPING</li>
@@ -138,6 +141,5 @@
             </ul>
         </div>
     </div>
-    <!-- ORDER SUMMARY FOOTER -->
 
-    </div>
+</body>

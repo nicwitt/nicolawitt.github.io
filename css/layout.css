@@ -18,19 +18,39 @@ html {
 nav {
     position: fixed;
     height: 18%;
-    max-height: 40%;
-    max-width: 100%;
+    width: 100%;
     z-index: 1;
-    padding: 1em;
-    top: 0;
+    padding: 0.5em;
 }
 
 .top-nav {
+    width: 100vw;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }
 
+/* MENU ICON */
+.hamburger {}
+
+/* LOGO */
+.logo {
+    max-width: 40vw;
+    position: relative;
+    align-self: center;
+    padding: none;
+    /* margin-left: 18vw; */
+    margin-right: 13vw;
+}
+
+/* ICONS */
+nav ion-icon {
+    position: absolute;
+    justify-content: center;
+    margin-top: 2px;
+}
 .top-nav ul {
     display: flex;
     flex-direction: row;
@@ -39,6 +59,11 @@ nav {
 
 .top-nav a {
     margin-right: 30px;
+}
+
+.nav-right{
+    float:right;
+    right: 0;
 }
 
 /* DROP DOWN CATEGORIES MENU */
@@ -73,28 +98,16 @@ nav {
     transform: scale(1);
 }
 
-/* MENU ICON */
-.hamburger {}
-
-/* LOGO */
-.logo {
-    max-width: 35%;
-    position: relative;
-    align-self: center;
-    padding: none;
-    margin-left: 70px;
-}
-
-/* ICONS */
-nav ion-icon {
-    position: absolute;
-    justify-content: center;
-    margin-top: 2px;
-}
+/* SEARCH FIELD */
+.site-search {
+    background: black;
+    border-bottom: 1px solid white;
+  }
 
 /* SEARCH ICON */
 /* CART ICON */
 /* DROP DOWN ICON*/
+
 /* -------------------SIDE NAV------------------- */
 
 #sidenav {
@@ -267,9 +280,13 @@ nav ion-icon {
 }
 
 /* -------------------PRODUCT PAGE------------------- */
-/* NAV BAR */
+/* ---CONTAINER MARGIN TOP ----*/
 
-/* BREADCRUMBS */
+.product-page-container{
+    padding-top: 8.2em;
+}
+
+/* ---BREADCRUMBS ----*/
 .breadcrumbs {
     display: flex;
     flex-direction: row;
@@ -296,12 +313,14 @@ nav ion-icon {
     margin-right: 2vw;
 }
 
-/* FILTER & PRODUCT CONTAINER */
+/* ---FILTER & PRODUCT CONTAINER---- */
 .flex-container {
     display: flex;
     flex-direction: row;
     position: relative;
 }
+
+/* FILTER COLUMN LEFT */
 
 .filter-container {
     width: 50%;
@@ -353,7 +372,7 @@ nav ion-icon {
     display: inline-block;
 }
 
-/* PHOTO GALLERY GRID */
+/* ----PHOTO GALLERY GRID---- */
 
 .gallery-container {
     position: relative;
@@ -370,13 +389,39 @@ nav ion-icon {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: stretch;
-    align-items: stretch;
-    border: 1px solid white;
     margin-bottom: 1%;
-    width: 24%;
     max-height: 30%;
+    overflow: hidden;
+}
+
+.gallery-tile{
+    border: 1px solid white;
+}
+
+.quick-view {
+    background-color: #fff;
+    width:70%;
+    height:25%;
+    border-radius: 0.5em;
+    transform: scaleX(0); 
+    margin-bottom: 5em;
+    position:absolute; 
+    display: flex;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    opacity: 0; 
+    transition: all 0.4s ease;
+}
+
+.quick-view a{
+    width: 100%;
+}
+
+.product-gallery:hover .quick-view{
+    transform: scaleX(1); 
+    opacity: 0.8;
 }
 
 .product-gallery img {
@@ -876,18 +921,24 @@ input[type=checkbox] {
 }
 
 /* INPUT FORM */
-.form-input-shipping {
+.form-input {
     float: left;
     border: 0.5px solid var(--grey);
     height: 2.2em;
     width: 100%;
-    background-color: #00000000;
-    color: var(--white);
     margin-bottom: 0.5em;
   }
 
-  .form-input-shipping:hover {
+.form-input:hover {
       border: 1px solid var(--white);
+  }
+
+/* CONFIRM PAYMENT SUBMIT BUTTON */
+button[type=submit]{
+    border: 1px solid var(--white);
+    height: 2.5em;
+    width: 100%;
+    margin-top: 2em;
   }
 
 /* ----ORDER SUMMARY CONTAINER FLOAT-----*/
@@ -915,6 +966,7 @@ input[type=checkbox] {
 .summary-item-wrapper{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     border-bottom: 1px solid white;
     margin: 0 1.5em 0.8em 1.5em;
     text-align:left;
@@ -931,13 +983,11 @@ input[type=checkbox] {
 }
 
 .order-summary-container li{
-    margin-left: 1em;
     line-height: 1.2em;
 }
 
 .summary-product-price li{
-    margin-left: 5em;
-    right: 0;
+    margin-left: 6em;
 }
 
 .summary-product-tile{
@@ -952,7 +1002,7 @@ input[type=checkbox] {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 1.5em 1em 0.5em;
+    margin: 0 1.5em 1em 1.5em;
     text-align: start;
     line-height: 1em;
 }
@@ -963,15 +1013,41 @@ input[type=checkbox] {
 
 /* -------------------PAYMENT DETAILS------------------- */
 
+.container-payment{
+    height: 100vh;
+}
 
-/* -------------------ORDER CONFIRMATION MESSAGE------------------- */
+/* -------------------CONFIRMATION MESSAGE------------------- */
 
-.confirmation-message{
-        margin-top: 0%;
-        /* margin: auto; */
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+.confirmation-container{
+    margin-top: 12em;
+    height: 80vh;
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+}
+
+.summary-container-horizontal{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 30vh;
+    top: 0;
+    right: 0;
+    margin: 9em 9em 0 0;
+    text-align: center;
+    overflow-x: scroll;
+}
+
+.confirmation-container p{
+    line-height: 1.3em;
+}
+
+.bottom-cluster{
+    margin-top: 3em;
 }
 
 /* -------------------FOOTER------------------- */
@@ -979,17 +1055,27 @@ footer {
     background-color: var(--black);
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     height: 15em;
     padding: 2em;
-    margin-left: 0;
+    margin: auto;
     border-top: 1px solid white;
 }
 
 .socials {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+}
+
+.footer-right {
+    text-align: right;
+    right: 0;
+}
+
+.socials ion-icon{
+    font-size: 3em;
 }
 
 footer p {
@@ -997,7 +1083,7 @@ footer p {
 }
 
 footer li {
-    margin-bottom: 5px;
+    line-height: 1.2em;
 }
 
 

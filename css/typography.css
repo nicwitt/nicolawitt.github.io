@@ -7,9 +7,9 @@
     --xl-text: 2rem;
     --l-text: 1.6rem;
     --nav-text: 1.4rem;
-    --regular-text: 1.2rem;
+    --regular-text: 1.1rem;
     --small-text: 1em;
-    --xs-text: 0.9em;
+    --xs-text: 0.8em;
     --xxs-text: 0.8em;
 }
 
@@ -127,12 +127,33 @@ nav a{
     font-size: var(--regular-text);
 }
 
+/* QUICK VIEW ANIMATION */
+.quick-view a{
+    font-size: var(--regular-text);
+}
+
 /* -------------------CHECKOUT------------------- */
 
 
 .order-summary-container li{
     font-size: var(--small-text);
 }
+
+.submit-button{
+    font-size: var(--l-text);
+}
+
+/* -------------------CONFIRMATION MESSAGE------------------- */
+
+
+.confirmation-container p{
+    font-size: var(--l-text);
+}
+
+.confirmation-container a{
+    font-size: var(--l-text);
+}
+
 
 /* -------------------FOOTER------------------- */
 
@@ -141,9 +162,9 @@ footer ul{
 }
 
 footer a{
-    font-size: var(--xxs-text) !important;
+    font-size: var(--regular-text) !important;
 }
 
 .footer-right{
-    font-size: var(--xxs-text) !important;
+    font-size: var(--regular-text) !important;
 }
