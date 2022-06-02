@@ -19,6 +19,15 @@ nav {
     z-index: 1;
 }
 
+/* condensed logo for smaller screens */
+.condensed-logo img{
+    position: absolute;
+    max-width: 3em;
+    margin-top: 0.8em;
+    margin-left: 1em;
+    transform: scale(0);
+} 
+
 /* Top Nav Flex Row */
 
 .logo img{
@@ -65,19 +74,26 @@ nav {
 }
 
 .dropdown-content li:first-child{
-    padding-left: 9vw;
+    padding-left: 11.5vw;
 }
 
-.dropdown-content {
+.dropdown-content{
     position: absolute;
     display: flex;
     flex-direction: row;
-    width: 111vw;
-    margin-left: -11vw;
-    margin-top: 1em;
-    height: 3.1em;
+    width: 150vw;
+    margin-left: -13vw;
+    height: 2.3em;
     /* makes it dissapear until hovered over */
     transform: scale(0);
+}
+
+.dropdown-trigger a{
+    padding-bottom: 0.9em;
+}
+
+.dropdown-content li{
+    margin-top: -0.1em;
 }
 
 .dropdown{
@@ -334,6 +350,10 @@ nav {
 .review-guitar img {
     transform: rotate(40deg);
     height: 13rem;
+}
+
+.reviews li{
+    color: white;
 }
 
 /* ---------BREADCRUMBS----------*/
@@ -1120,7 +1140,8 @@ footer {
 }
 
 .socials ion-icon {
-    font-size: 3em;
+    font-size: 1.5em;
+    padding-right: 0.5em;
 }
 
 footer p {
@@ -1128,13 +1149,9 @@ footer p {
 }
 
 footer li {
-    line-height: 1.2em;
+    line-height: 1.4em;
 }
 
-
-/* -----LEFT STACK----- */
-/* EMAIL INPUT */
-/* SOCIALS CLUSTER */
-/* -----ABOUT STACK----- */
-/* -----POLICY STACK----- */
-/* -----RIGHT STACK - BUSINESS INFORMATION----- */
+.footer-policy li:first-child{
+    margin-top: -1em;
+}

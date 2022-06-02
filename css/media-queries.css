@@ -1,3 +1,5 @@
+/* --------------------------PHONE DISPLAY------------------------- */
+
 /* -------BREADCRUMBS-------- */
 @media screen and (max-width: 600px) {
 
@@ -35,42 +37,15 @@
         display: none;
     }
 
-}
+    .condensed-logo img{
+        transform: scale(1);
+    } 
 
-@media screen and (max-width: 800px){
-    .dropdown-categories {
-        display: none;
+    .nav-left{
+        padding-left: 4em;
     }
 
-    nav{
-        height: 6em;
-    }
-
-    .topnav{
-        margin-top: -2em;
-    }
-
-    .welcome-image{
-        margin-top: -3em;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .dropdown-categories a {
-        font-size: var(--xss-text);
-    }
-}
-
-/* IPAD DISPLAY */
-
-@media screen and (max-width: 1200px){
-    .dropdown-categories li {
-        font-size: var(--small-text);
-        margin-left: -0.2em;
-    }
-}
-
-/* ------------------SIDE NAV---------------- */
+}/* ------------------SIDE NAV---------------- */
 
 @media screen and (max-width: 600px) {
     .sidenav {
@@ -86,32 +61,6 @@
         font-size: var(--s-text);
         width: 80%;
     } 
-}
-
-/* ------------------HOME------------------- */
-
-/* PHONE DISPLAY */
-
-@media screen and (max-width: 600px){
-    .feature-header h2{
-        font-size: var(--regular-text);}
-}
-
-/* ------------------FOOTER---------------- */
-
-@media screen and (max-width: 600px) {
-
-    .footer-about{
-        text-align: end;
-    }
-
-    .footer-policy{
-        display: none;
-    }
-
-    .footer-right{
-        display: none;
-    }
 }
 
 /* -----------PRODUCT PAGE --------------- */
@@ -146,7 +95,14 @@
     }
 }
 
-/* ----------------PRODUCT LISTING------------------- */
+/* -------------HOME------------ */
+
+@media screen and (max-width: 600px){
+    .feature-header h2{
+        font-size: var(--regular-text);}
+}
+
+/* ----------PRODUCT LISTING------------ */
 
 @media screen and (max-width: 600px) {
 
@@ -199,15 +155,7 @@
 
 }
 
-@media screen and (min-width: 1200px) {
-    .description-container{
-        -webkit-mask-image: none;
-    }
-
-    .float{
-        display: none;
-    }
-}
+/* ------PRODUCT LISTING-------- */
 
 @media screen and (min-width: 600px) {
     .description-container{
@@ -219,6 +167,95 @@
     }
 }
 
+/* ------------FOOTER----------- */
+
+@media screen and (max-width: 750px) {
+
+    .footer-about{
+        text-align: end;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .footer-policy{
+        display: none;
+    }
+
+}
+
+/* -----------------SHOPPING CART-------------- */
+
+@media screen and (max-width: 600px) {
+
+    .checkout-summary {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        float: top;
+        left: 3em;
+        padding-top: 2.2em;
+        font-size: var(--xss-text);
+    }
+
+    .checkout-scroll h2 {
+        margin-bottom: 4em;
+    }
+
+    .checkout-button {
+        margin-top: 0.5em;
+        vertical-align: middle;
+    }
+
+}
+
+/* ----------------CHECKOUT------------------- */
+@media screen and (max-width: 600px) {
+    .order-summary-container {
+        display: none;
+    }
+}
+
+/* -------------------------------IPAD DISPLAY----------------------------- */
+
+/* ---------------NAV BAR--------------*/
+
+@media screen and (max-width: 800px){
+    .dropdown-categories {
+        display: none;
+    }
+
+    nav{
+        height: 6em;
+    }
+
+    .topnav{
+        margin-top: -2em;
+    }
+
+    .welcome-image{
+        margin-top: -3em;
+    }
+}
+
+/* ---------------NAV BAR--------------*/
+
+@media screen and (max-width: 1000px) {
+    .dropdown-categories a {
+        font-size: var(--xss-text);
+    }
+}
+
+
+@media screen and (max-width: 1200px){
+    .dropdown-categories li {
+        font-size: var(--small-text);
+        margin-left: -0.2em;
+    }
+}
+
+/* ------PRODUCT LISTING-------- */
 
 @media screen and (max-width: 992px) {
 
@@ -251,36 +288,14 @@
 
 }
 
+/* -------------------------------WIDER DISPLAY----------------------------- */
 
-/* -----------------SHOPPING CART-------------- */
-
-@media screen and (max-width: 600px) {
-
-    .checkout-summary {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        float: top;
-        left: 3em;
-        padding-top: 2.2em;
-        font-size: var(--xss-text);
+@media screen and (min-width: 1200px) {
+    .description-container{
+        -webkit-mask-image: none;
     }
 
-    .checkout-scroll h2 {
-        margin-bottom: 4em;
-    }
-
-    .checkout-button {
-        margin-top: 0.5em;
-        vertical-align: middle;
-    }
-
-}
-
-/* ----------------CHECKOUT------------------- */
-@media screen and (max-width: 600px) {
-    .order-summary-container {
+    .float{
         display: none;
     }
 }
