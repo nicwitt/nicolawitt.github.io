@@ -19,7 +19,7 @@
 
     <!-- X ICON -->
     <div id="sidenav">
-        <div class="close-mark">
+        <div id="toggleClose" onclick="toggleClose()">
             <i class="fa-regular fa-xmark" style="font-size: 2em; color:white;"></i>
         </div>
 
@@ -80,7 +80,9 @@
 
         <div class="search-container">
             <input type="text" placeholder="Search.." name="search">
-            <a href="#"><ion-icon name="search-outline"></ion-icon></a>
+            <a href="#">
+                <ion-icon name="search-outline"></ion-icon>
+            </a>
         </div>
 
         <hr>
@@ -93,6 +95,19 @@
             <li><a href="#">Twitter</a></li>
         </ul>
     </div>
+
+    <script>
+        var toggleStatus = 1;
+        function toggleClose() {
+            if (toggleStatus == 1) {
+                document.getElementById("sidenav").style.left = "-40em";
+                toggleStatus == 0;
+            }
+            // else if(toggleStatus==0) {
+            //     document.getElementById("sidenav").style.left = "0px";
+            //     toggleStatus == 1;}
+        }
+    </script>
 </body>
 
 </html>

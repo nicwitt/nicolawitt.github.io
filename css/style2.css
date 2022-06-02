@@ -134,3 +134,87 @@ body {
     align-items: center;
 }
 
+/* -------------------SIDE NAV------------------- */
+
+#sidenav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /* bottom: 0; */
+    overflow-x: hidden;
+    width: 40%;
+    height: 100%;
+    padding-top: 1vw;
+    padding-left: 1vw;
+    z-index: 1;
+    transition: all ease-in-out 200ms;
+    -webkit-transition: all ease-in-out 200ms;
+}
+
+#toggleClose{
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+    cursor: pointer;
+    border: 10px solid white;
+    border-radius: 2px;
+    transition: all ease-in-out 200ms;
+    -webkit-transition: all ease-in-out 200ms;
+}
+
+#toggleClose:hover{
+    opacity: 0.7;
+}
+
+#sidenav li {
+    margin-bottom: 0.4vw;
+}
+
+#sidenav hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+
+.shop-dropdown-child {
+    margin-left: 5px;
+    margin-top: 1vh;
+    vertical-align: middle;
+}
+
+.shop-dropdown-child ion-icon {
+    position: relative;
+    margin-right: 1vw;
+}
+
+.shop-dropdown-child li {
+    margin: -0.2vw;
+}
+
+.cluster-one {
+    margin-bottom: 3vh;
+}
+
+.cluster-two {
+    margin-bottom: 3vh;
+}
+
+.search-container {
+    vertical-align: middle;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+
+.search-container input[type=text] {
+    float: left;
+    border: none;
+    height: 30px;
+    width: 90%;
+}
+
+

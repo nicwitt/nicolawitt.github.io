@@ -5,6 +5,16 @@ function toggleResponsive() {
  navbar.classList.toggle("responsive");
 } 
 
+function openNav() {
+  document.getElementById("sidenav").style.width = "20%";
+}
+
+/* Closes Side Navigation */
+function closeNav() {
+  document.getElementById("sideCart").style.width = "0";
+  document.getElementById("mySidenav").style.width = "0";
+}
+
 // ----------------SIDE NAV------------------
 
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */

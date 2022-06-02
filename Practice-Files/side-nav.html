@@ -10,37 +10,34 @@
     <script src="https://kit.fontawesome.com/b9def743fc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
 
-            $('#navbar').load("nav-bar.html");
+            $('#navbar').load("/html/nav-bar.html");
 
         });
     </script>
     <script>
         $(document).ready(function () {
 
-            $('#footer').load("footer.html");
+            $('#footer').load("/html/footer.html");
 
         });
     </script>
-    <title>Home</title>
+    <title>Side Nav</title>
 </head>
-
 <body>
 
     <!-- ----------------------NAVBAR----------------------- -->
 
     <div id="navbar"></div>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-regular fa-xmark"
-                style="font-size: 2em; color:white;"></i> </a>
-        <!-- <div id="sidenav">
+    <!-- ----------------------SIDENAV----------------------- -->
+
+    <div id="sidenav">
         <div id="toggleClose" onclick="toggleClose()">
             <i class="fa-regular fa-xmark" style="font-size: 2em; color:white;"></i> 
-        </div> -->
+        </div>
 
         <!-- SIDE-NAV SHOP -->
         <div class="sidenav-top">
@@ -115,7 +112,6 @@
         </ul>
     </div>
 
-
     <!-- ----------------------HERO BANNER----------------------- -->
 
     <div class="welcome-image">
@@ -137,7 +133,7 @@
                     <li class="product-tile-img"> <img src="/images/1Les-Paul-Classic.png" alt="electricguitar"></li>
                     <div class="colour-dot-wrap">
                         <div class="colour-dot dot-dark-blue"></div>
-                        <div class="colour-dot dot-light-blue"></div>
+                        <div class="colour-dot dot-light-blue"></div>       
                     </div>
                     <li class="product-title-brand"> GIBSON 2020</li>
                     <li class="product-tile-name"> LES PAUL CLASSIC </li>
@@ -149,7 +145,7 @@
                     <li class="product-tile-img"> <img src="/images/Slach-2019.png" alt="electricguitar"></li>
                     <div class="colour-dot-wrap">
                         <div class="colour-dot dot-dark-blue"></div>
-                        <div class="colour-dot dot-purple"></div>
+                        <div class="colour-dot dot-purple"></div>       
                     </div>
                     <li class="product-title-brand">SLACH 2016</li>
                     <li class="product-tile-name">STANDARD</li>
@@ -160,8 +156,7 @@
                 <ul class="product-tile tile-container">
                     <li class="product-tile-img"> <img src="/images/Antique-Victorian.png" alt="electricguitar"></li>
                     <div class="colour-dot-wrap">
-                        <div class="colour-dot dot-light-blue"></div>
-                    </div>
+                        <div class="colour-dot dot-light-blue"></div>                    </div>
                     <li class="product-title-brand">ANTIQUE</li>
                     <li class="product-tile-name">VICTORIAN 1996</li>
                 </ul>
@@ -173,7 +168,7 @@
                     <li class="product-tile-img"> <img src="/images/Gibson-2020.png" alt="electricguitar"></li>
                     <div class="colour-dot-wrap">
                         <div class="colour-dot dot-aqua"></div>
-                        <div class="colour-dot dot-dark-blue"></div>
+                        <div class="colour-dot dot-dark-blue"></div>       
                     </div>
                     <li class="product-title-brand">ARIA</li>
                     <li class="product-tile-name">SERIES ELECTRIC</li>
@@ -196,7 +191,7 @@
                     <li class="product-tile-img"> <img src="/images/American-Classic.png" alt="electricguitar"></li>
                     <div class="colour-dot-wrap">
                         <div class="colour-dot dot-cream"></div>
-                        <div class="colour-dot dot-grey"></div>
+                        <div class="colour-dot dot-grey"></div>       
                     </div>
                     <li class="product-title-brand">SOLAR GUITARS</li>
                     <li class="product-tile-name">LIMITED SERIES</li>
@@ -205,11 +200,10 @@
 
             <a href="#">
                 <ul class="product-tile tile-container">
-                    <li class="product-tile-img"> <img src="/images/American-Professional.png" alt="electricguitar">
-                    </li>
+                    <li class="product-tile-img"> <img src="/images/American-Professional.png" alt="electricguitar"></li>
                     <div class="colour-dot-wrap">
                         <div class="colour-dot dot-light-blue"></div>
-                        <div class="colour-dot dot-cream"></div>
+                        <div class="colour-dot dot-cream"></div>       
                     </div>
                     <li class="product-title-brand">SQUIER</li>
                     <li class="product-tile-name">PROFESSIONAL</li>
@@ -232,7 +226,7 @@
                     <li class="product-tile-img"> <img src="/images/Jazmaster-Gold.png" alt="electricguitar"></li>
                     <div class="colour-dot-wrap">
                         <div class="colour-dot dot-cream"></div>
-                        <div class="colour-dot dot-olive"></div>
+                        <div class="colour-dot dot-olive"></div>       
                     </div>
                     <li class="product-title-brand">SQUIER</li>
                     <li class="product-tile-name">JAZZMASTER GOLD</li>
@@ -520,20 +514,16 @@
 
     <!-- ----------------------FOOTER----------------------- -->
     <div id="footer"></div>
-
-
-    <!-- <script>
+    <script>
         var toggleStatus = 1;
         function toggleClose() {
             if (toggleStatus == 1) {
                 document.getElementById("sidenav").style.left = "-40em";
                 toggleStatus == 0;
-            } -->
-    <script>
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-            document.body.style.backgroundColor = "white";
+            }
+            else if(toggleStatus==0) {
+                document.getElementById("sidenav").style.left = "0px";
+                toggleStatus == 1;}
         }
     </script>
 </body>
