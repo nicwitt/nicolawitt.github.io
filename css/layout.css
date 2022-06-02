@@ -105,40 +105,36 @@ nav {
 
 /* -------------------SIDE NAV------------------- */
 
-#sidenav {
+.sidenav {
     position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
-    overflow-x: hidden;
+    overflow-y: scroll;
     width: 0;
     height: 100%;
-    padding-top: 1vw;
-    padding-left: 1vw;
+    padding-top: 3em;
     z-index: 1;
-    transition: all ease-in-out 500ms;
-    -webkit-transition: all ease-in-out 500ms; 
+    transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s; 
 }
 
-#toggleClose{
-    /* position: relative; */
-    top: 0;
+.sidenav .closebtn {
+    position: absolute;
+    top: 0.5em;
     right: 0;
-    z-index: 2;
-    cursor: pointer;
-    transition: all ease-in-out 200ms;
-    -webkit-transition: all ease-in-out 200ms;
-}
+    margin-right: 1em;
+  }
 
-#toggleClose:hover{
-    opacity: 0.7;
-}
+#main {
+    transition: margin-left .5s;
+  }
 
-#sidenav li {
+
+.sidenav li {
     margin-bottom: 0.4vw;
 }
 
-#sidenav hr {
+.sidenav hr {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 40px;

@@ -16,6 +16,16 @@
     }
 }
 
+/* SIDE NAV */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+        width: 20em;
+    }
+    .sidenav a {font-size: var(--xxs-text);}
+  }
+
 /* BREADCRUMBS */
 @media screen and (max-width: 600px) {
 

@@ -89,15 +89,15 @@ nav a{
 
 /* -------------------SIDENAV------------------- */
 
-#sidenav a{
+.sidenav a{
     font-size: var(--nav-text)
 }
 
-#sidenav span{
+.sidenav span{
     font-size: var(--nav-text);
 }
 
-#sidenav .shop-dropdown a{
+.sidenav .shop-dropdown a{
     font-size: var(--nav-text);
 }
 

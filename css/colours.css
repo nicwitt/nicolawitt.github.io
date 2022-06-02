@@ -72,7 +72,7 @@ nav .drop-down{
 
 /* -------------------SIDENAV-------------------*/
 
-#sidenav{
+.sidenav{
     background: linear-gradient(120deg, rgba(0,0,0,1) 0%, rgba(6,25,29,1) 77%, rgba(19,85,99,1) 92%, rgba(34,150,175,1) 100%) !important;
 }
 
