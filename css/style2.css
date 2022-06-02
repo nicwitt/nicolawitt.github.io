@@ -66,6 +66,110 @@ body {
 }
 
 
+/* -------------------NAVBAR-------------------*/
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.topnav {
+    /* display: flex;
+    flex-direction: row; */
+    position: relative;
+    height: 10vw;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav-left {
+    float: left;
+    transform: translateY(70%);
+}
+
+/* Centered section inside the top navigation */
+.topnav-centered img {
+    max-width: 40%;
+    float: none;
+    position: absolute; 
+    top: 40%;
+    left: 50%;
+    padding-top: 0.5em;
+    transform: translate(-50%, -50%);
+}
+
+.topnav2{
+
+}
+
+.center img{
+    max-width: 1vw;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+    float: right;
+    padding-right: 2em;
+    transform: translateY(70%);
+}
+
+/* Dropdown categories styling */
+.dropdown-categories>ul {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 85px;
+}
+
+.dropdown-categories li {
+    margin: 25px;
+}
+
+/* Icon positioning  */
+.dropdown ion-icon {
+    font-size: 3vh;
+}
+
+/* GUITARS DROP DOWN MENU ON HOVER */
+.dropdown-trigger {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    /* makes it dissapear until hovered over */
+    transform: scale(0);
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dropdown-trigger:hover .dropdown-content {
+    transform: scale(1);
+}
+
+/* SEARCH FIELD */
+.site-search {
+    background: black;
+    border: none;
+    border-bottom: 1px solid white;
+}
 
 .feature-container{
     position: relative;

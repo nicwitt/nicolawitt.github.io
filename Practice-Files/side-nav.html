@@ -7,123 +7,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
-    <script src="https://kit.fontawesome.com/b9def743fc.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script>
-        $(document).ready(function () {
-
-            $('#navbar').load("/html/nav-bar.html");
-
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-
-            $('#footer').load("/html/footer.html");
-
-        });
-    </script>
-    <title>Side Nav</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Navbar</title>
 </head>
+
 <body>
+    <!-- ------------TOP NAV W/ LOGO------------ -->
+    <nav>
+        <div id="topnav" class="responsive">
+            <div class="nav-left">
+                <span class="topnav-left" style="cursor:pointer" onclick="openNav()">
+                <a href="#"><u>MENU</u></a></span>
+            </div>
 
-    <!-- ----------------------NAVBAR----------------------- -->
+            <div class="logo">
+                <a href="/html/index.html" class="active"><img src="/images/nav-logo.png" alt=logo class="logo"></a>
+            </div>
 
-    <div id="navbar"></div>
-
-    <!-- ----------------------SIDENAV----------------------- -->
-
-    <div id="sidenav">
-        <div id="toggleClose" onclick="toggleClose()">
-            <i class="fa-regular fa-xmark" style="font-size: 2em; color:white;"></i> 
+            <div class="nav-right">
+                <a href="#"><u>SEARCH</u></a>
+                <a href="shopping-cart.html"><u>CART</u></a>
+            </div>
         </div>
 
-        <!-- SIDE-NAV SHOP -->
-        <div class="sidenav-top">
-            <hr>
-            <ul>
-                <li><a class="shop-dropdown-parent" href="#">Shop<i class="fa-regular fa-plus"></i></a></li>
-                <!-- SHOP DROP-DOWN ON CLICK -->
-                <ul class="shop-dropdown-child">
-                    <li><a href="#">
-                            <ion-icon name="chevron-forward-outline"></ion-icon>Guitars
-                        </a></li>
-                    <li><a href="#">
-                            <ion-icon name="chevron-forward-outline"></ion-icon>Drums
-                        </a></li>
-                    <li><a href="#">
-                            <ion-icon name="chevron-forward-outline"></ion-icon>Live Sound
-                        </a></li>
-                    <li><a href="#">
-                            <ion-icon name="chevron-forward-outline"></ion-icon>Studio
-                        </a></li>
-                    <li><a href="#">
-                            <ion-icon name="chevron-forward-outline"></ion-icon>Keyboards
-                        </a></li>
-                    <li><a href="#">
-                            <ion-icon name="chevron-forward-outline"></ion-icon>Sheet Music
-                        </a></li>
-                    <li><a href="#">
-                            <ion-icon name="chevron-forward-outline"></ion-icon>Accessories
-                        </a></li>
+        <!-- ------------TOP NAV W/ DROP-DOWNS------------ -->
+        <div class="bottom-nav">
+            <div class="dropdown-categories">
+                <ul>
+                    <li class="dropdown-trigger"><a class="dropdown" href="product-page.html">GUITARS<ion-icon
+                                name="chevron-down-outline"></ion-icon></a>
+                        <!-- DROP-DOWN CATEGORIES ON HOVER -->
+                        <ul class="dropdown-content">
+                            <li><a href="product-page.html">ELECTRIC GUITARS</a></li>
+                            <li><a href="#">ACCOUSTIC GUITARS</a></li>
+                            <li><a href="#">BASS GUITARS</a></li>
+                            <li><a href="#">FOLK INSTRUMENTS</a></li>
+                            <li><a href="#">STRINGS</a></li>
+                        </ul>
+                    <li><a class="dropdown" href="#">DRUMS<ion-icon name="chevron-down-outline"></ion-icon></a></li>
+                    <li><a class="dropdown" href="#">LIVE SOUND<ion-icon name="chevron-down-outline"></ion-icon></a>
+                    </li>
+                    <li><a class="dropdown" href="#">STUDIO<ion-icon name="chevron-down-outline"></ion-icon></a></li>
+                    <li><a class="dropdown" href="#">KEYBOARD<ion-icon name="chevron-down-outline"></ion-icon></a></li>
+                    <li><a class="dropdown" href="#">SHEET MUSIC<ion-icon name="chevron-down-outline"></ion-icon></a>
+                    </li>
+                    <li><a class="dropdown" href="#">ACCESSORIES<ion-icon name="chevron-down-outline"></ion-icon></a>
+                    </li>
                 </ul>
-                </li>
-                <hr>
-                <!-- VISIT US & REVIEWS -->
-                <li><a href="#">Visit Us</a></li>
-                <hr>
-                <li><a href="#">Reviews</a></li>
-                <hr>
-            </ul>
+            </div>
         </div>
-        <!-- ----------------------SIDE NAV CENTER CONTENT----------------------- -->
-
-        <ul class="cluster-one">
-            <li><a href="#">Freight</a></li>
-            <li><a href="#">Returns & Exchanges</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-        </ul>
-
-        <ul class="cluster-two">
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Create Account</a></li>
-        </ul>
-
-        <!-- ----------------------SEARCH FUNCTION----------------------- -->
-
-        <div class="search-container">
-            <input type="text" placeholder="Search.." name="search">
-            <a href="#">
-                <ion-icon name="search-outline"></ion-icon>
-            </a>
-        </div>
-
-        <hr>
-
-        <!-- ----------------------SOCIALS----------------------- -->
-
-        <ul class="sidenav-socials">
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
-        </ul>
-    </div>
-
-    <script>
-        var toggleStatus = 1;
-        function toggleClose() {
-            if (toggleStatus == 1) {
-                document.getElementById("sidenav").style.left = "-40em";
-                toggleStatus == 0;
-            }
-            else if(toggleStatus==0) {
-                document.getElementById("sidenav").style.left = "0px";
-                toggleStatus == 1;}
-        }
-    </script>
+    </nav>
 </body>
 
 </html>

@@ -14,87 +14,93 @@
 </head>
 
 <body>
-    <div class="sidenav-top">
-        <hr>
-        <ul>
-            <li><a class="shop-dropdown-parent" href="#">Shop<i class="fa-regular fa-plus"></i></a></li>
-            <!-- SHOP DROP-DOWN ON CLICK -->
-            <ul class="shop-dropdown-child">
-                <li><a href="#">
-                        <ion-icon name="chevron-forward-outline"></ion-icon>Guitars
-                    </a></li>
-                <li><a href="#">
-                        <ion-icon name="chevron-forward-outline"></ion-icon>Drums
-                    </a></li>
-                <li><a href="#">
-                        <ion-icon name="chevron-forward-outline"></ion-icon>Live Sound
-                    </a></li>
-                <li><a href="#">
-                        <ion-icon name="chevron-forward-outline"></ion-icon>Studio
-                    </a></li>
-                <li><a href="#">
-                        <ion-icon name="chevron-forward-outline"></ion-icon>Keyboards
-                    </a></li>
-                <li><a href="#">
-                        <ion-icon name="chevron-forward-outline"></ion-icon>Sheet Music
-                    </a></li>
-                <li><a href="#">
-                        <ion-icon name="chevron-forward-outline"></ion-icon>Accessories
-                    </a></li>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-regular fa-xmark"
+                style="font-size: 1.5em; color:white;"></i> </a>
+
+        <!-- ----------------------SIDENAV----------------------- -->
+        <div class="sidenav-top">
+            <hr>
+            <ul>
+                <li><a class="shop-dropdown-parent" href="#">Shop<i class="fa-regular fa-plus"></i></a></li>
+                <!-- SHOP DROP-DOWN ON CLICK -->
+                <ul class="shop-dropdown-child">
+                    <li><a href="product-page.html">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>Guitars
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>Drums
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>Live Sound
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>Studio
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>Keyboards
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>Sheet Music
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>Accessories
+                        </a></li>
+                </ul>
+                </li>
+                <hr>
+                <!-- VISIT US & REVIEWS -->
+                <li><a href="#">Visit Us</a></li>
+                <hr>
+                <li><a href="#">Reviews</a></li>
+                <hr>
             </ul>
-            </li>
-            <hr>
-            <!-- VISIT US & REVIEWS -->
-            <li><a href="#">Visit Us</a></li>
-            <hr>
-            <li><a href="#">Reviews</a></li>
-            <hr>
+        </div>
+        <!-- ----------------------SIDE NAV CENTER CONTENT----------------------- -->
+
+        <ul class="cluster-one">
+            <li><a href="#">Freight</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+
+        <ul class="cluster-two">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Create Account</a></li>
+        </ul>
+
+        <!-- ----------------------SEARCH FUNCTION----------------------- -->
+
+        <div class="search-container">
+            <input type="text" placeholder="Search.." name="search">
+            <a href="#">
+                <ion-icon name="search-outline"></ion-icon>
+            </a>
+        </div>
+
+        <hr>
+
+        <!-- ----------------------SOCIALS----------------------- -->
+
+        <ul class="sidenav-socials">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
         </ul>
     </div>
-    <!-- ----------------------SIDE NAV CENTER CONTENT----------------------- -->
 
-    <ul class="cluster-one">
-        <li><a href="#">Freight</a></li>
-        <li><a href="#">Returns & Exchanges</a></li>
-        <li><a href="#">Terms & Conditions</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-    </ul>
-
-    <ul class="cluster-two">
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Create Account</a></li>
-    </ul>
-
-    <!-- ----------------------SEARCH FUNCTION----------------------- -->
-
-    <div class="search-container">
-        <input type="text" placeholder="Search.." name="search">
-        <a href="#">
-            <ion-icon name="search-outline"></ion-icon>
-        </a>
-    </div>
-
-    <hr>
-
-    <!-- ----------------------SOCIALS----------------------- -->
-
-    <ul class="sidenav-socials">
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Twitter</a></li>
-    </ul>
-    </div>
     <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "40vw";
-            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-        }
+        // function openNav() {
+        //     document.getElementById("mySidenav").style.width = "40vw";
+        //     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        // }
 
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.body.style.backgroundColor = "white";
-        }
+        // function closeNav() {
+        //     document.getElementById("mySidenav").style.width = "0";
+        //     document.body.style.backgroundColor = "white";
+        // }
     </script>
 </body>
 
