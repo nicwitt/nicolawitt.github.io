@@ -1,4 +1,4 @@
-// ----------------NAV BAR------------------
+// ----------------CONDENSED NAV BAR------------------
 
 
 // ----------------SIDE NAV------------------
@@ -28,3 +28,19 @@ function closeCart() {
 
 
 // ----------------CHECKOUT VALIDATION------------------
+
+function formValidation(){
+  var firstName = document.forms["billing"]["fName"].value;
+  var lastName = document.forms["billing"]["lName"].value;
+  var eaddress = document.forms["billing"]["eaddress"].value;
+  var address1 = document.forms["billing"]["address1"].value;
+  var city = document.forms["billing"]["city"].value;
+  var pcode = document.forms["billing"]["pcode"].value;
+
+  if ((firstName == "")||(lastName == "")||(eaddress == "")||(address1 == "")||(city == "")||(pcode == "")){
+    alert("Required Field Misssing");
+    return false;
+  } else {
+    window.location.href="/html/shipping.html"
+  }
+}

@@ -793,7 +793,7 @@ input[type=checkbox] {
     right: 0;
     display: flex;
     flex-direction: column;
-    height: 81.5vh;
+    height: 100%;
     width: 0;
     z-index: 1;
     border: 1px solid white;
@@ -831,7 +831,7 @@ input[type=checkbox] {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    height: 45vh;
+    max-height: 45vh;
     margin-top: 2em;
     margin-left: 2em;
     margin-right: 2em;
@@ -846,7 +846,7 @@ input[type=checkbox] {
     justify-content: space-between;
     width: 50vw;
     height: 100%;
-    padding-bottom: 2em;
+    padding-bottom: 3vh;
 }
 
 .cart-add-main h3 {
@@ -857,14 +857,14 @@ input[type=checkbox] {
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
-    height: 90%;
+    max-height: 90%;
     border: 0.5px solid white;
     padding-left: 1vw;
     padding-right: 1vw;
 }
 
 .add-to-cart img {
-    max-width: 110px;
+    max-width: 7em;
     padding-bottom: 10px;
 }
 
