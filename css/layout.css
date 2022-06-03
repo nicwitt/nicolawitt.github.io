@@ -788,14 +788,43 @@ input[type=checkbox] {
 /* -------------------ADD TO CART ANNOUNCEMENT------------------- */
 /* LAYOUT */
 .add-to-cart {
+    position: fixed;
+    top: 9.5em;
+    right: 0;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    max-width: 50%;
-    float: right;
-    border-left: 1px solid white;
+    height: 81.5vh;
+    max-width: 50vw;
+    z-index: 1;
+    /* border-left: 1px solid white;
     border-right: 1px solid white;
+    border-top: 1px solid white; */
+    border: 1px solid white;
+    transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
 }
+
+.sidenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    width: 0;
+    height: 100%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    z-index: 1;
+    transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s; 
+}
+
+
+.myCart .cartbtn {
+    position: absolute;
+    top: 0.5em;
+    left: 0;
+    margin-right: 2em;
+  }
 
 .add-header {
     display: flex;
