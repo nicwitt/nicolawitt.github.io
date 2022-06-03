@@ -78,15 +78,15 @@ nav {
 }
 
 .dropdown-content li:first-child{
-    padding-left: 11.5vw;
+    padding-left: 12.5vw;
 }
 
 .dropdown-content{
     position: absolute;
     display: flex;
     flex-direction: row;
-    width: 150vw;
-    margin-left: -13vw;
+    width: 200vw;
+    margin-left: -14vw;
     height: 2.3em;
     /* makes it dissapear until hovered over */
     transform: scale(0);
@@ -152,7 +152,7 @@ nav {
     height: 100%;
     padding-top: 2em;
     padding-bottom: 1em;
-    z-index: 1;
+    z-index: 3;
     transition: all ease-in-out 0.5s;
     -webkit-transition: all ease-in-out 0.5s; 
 }
@@ -794,30 +794,12 @@ input[type=checkbox] {
     display: flex;
     flex-direction: column;
     height: 81.5vh;
-    max-width: 50vw;
+    width: 0;
     z-index: 1;
-    /* border-left: 1px solid white;
-    border-right: 1px solid white;
-    border-top: 1px solid white; */
     border: 1px solid white;
     transition: all ease-in-out 0.5s;
     -webkit-transition: all ease-in-out 0.5s;
 }
-
-.sidenav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow-y: scroll;
-    width: 0;
-    height: 100%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    z-index: 1;
-    transition: all ease-in-out 0.5s;
-    -webkit-transition: all ease-in-out 0.5s; 
-}
-
 
 .myCart .cartbtn {
     position: absolute;
