@@ -37,15 +37,6 @@ a:hover{
     color: var(--white);
 }
 
-.search-container input[type=text] {
-    float: left;
-    border: none;
-    height: 30px;
-    width: 90%;
-    background-color: #00000000;
-    color: var(--white);
-}
-
 /* -------------------NAVBAR-------------------*/
 
 /* NAVMAIN */
@@ -303,4 +294,14 @@ button[type=submit]{
 
 .footer{
     background-color: black;
+}
+
+.email-container input[type=text] {
+    border-bottom: 1px solid white;
+    background-color: #00000000;
+    color: var(--white);
+  }
+
+  .email-container a ion-icon{
+    color: var(--grey);
 }

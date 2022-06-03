@@ -48,6 +48,10 @@ nav {
     margin-left: 1em;
 }
 
+/* .nav-right{
+    position: relative;
+} */
+
 /* Dropdown categories styling */
 
 .dropdown-categories {
@@ -88,12 +92,19 @@ nav {
     transform: scale(0);
 }
 
+
 .dropdown-trigger a{
     padding-bottom: 0.9em;
 }
 
 .dropdown-content li{
     margin-top: -0.1em;
+}
+
+.dropdown-content a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .dropdown{
@@ -112,6 +123,23 @@ nav {
     border: none;
     border-bottom: 1px solid white;
 }
+
+.search-nav{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 20vw;
+    right: 0;
+    transform: translate(-7em, -0.65em);
+    border-bottom: 1.5px solid white;
+    /* transform: scale(0); */
+}
+
+/* .search-nav ion-icon{
+    font-size: 1.5em;
+} */
+
+
 
 /* -------------------SIDE NAV------------------- */
 
@@ -1128,22 +1156,6 @@ footer {
 
 }
 
-.socials {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.footer-right {
-    text-align: right;
-    right: 0;
-}
-
-.socials ion-icon {
-    font-size: 1.5em;
-    padding-right: 0.5em;
-}
-
 footer p {
     margin-bottom: 30%;
 }
@@ -1152,6 +1164,53 @@ footer li {
     line-height: 1.4em;
 }
 
+/* FOOTER LEFT */
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-left p{
+    margin-bottom: -2em;
+}
+
+/* EMAIL INPUT */
+.email-container{
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+}
+
+.email-container input[type=text] {
+    float: left;
+    border: none;
+    width: 100%;
+}
+
+.email-container a ion-icon {
+    margin-left: -1em;
+}
+
+/* SOCIALS ICONS */
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.socials ion-icon {
+    font-size: 2.5em;
+    padding-right: 0.5em;
+}
+
+/* FOOTER RIGHT */
+.footer-right {
+    text-align: right;
+    right: 0;
+}
+
+/* FOOTER-POLICY  */
 .footer-policy li:first-child{
     margin-top: -1em;
 }

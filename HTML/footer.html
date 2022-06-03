@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/function.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <title>Footer</title>
 </head>
@@ -18,16 +19,21 @@
         <!-- FOOTER LEFT CONTAINER -->
         <div class="footer-left">
             <p>STAY IN THE KNOW</p>
-            <p>Email Address</p>
+            <div class="email-container">
+                <input type="text" placeholder="Email Address" name="email">
+                <a href="#">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+            </div>            
             <div class="socials">
+                <a href="#">
+                    <ion-icon class="socials" name="logo-facebook"></ion-icon>
+                </a>
                 <a href="#">
                     <ion-icon class="socials" name="logo-twitter" ></ion-icon>
                 </a>
                 <a href="#">
                     <ion-icon class="socials" name="logo-youtube"></ion-icon>
-                </a>
-                <a href="#">
-                    <ion-icon class="socials" name="logo-facebook"></ion-icon>
                 </a>
             </div>
         </div>

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/function.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
@@ -23,6 +24,13 @@
 
         });
     </script>
+    <script>
+        $(document).ready(function () {
+
+            $('#sidenav').load("side-menu.html");
+
+        });
+    </script>
     <title>Product Page</title>
 </head>
 
@@ -31,6 +39,11 @@
     <!-- ----------------------NAVBAR IMPORT----------------------- -->
 
     <div id="navbar"></div>
+
+    <!-- ----------------------SIDENAV----------------------- -->
+
+    <div id="sidenav"></div>
+
 
     <!-- ----------------------BREADCRUMBS----------------------- -->
     <div class="product-page-container">
