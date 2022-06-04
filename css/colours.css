@@ -184,6 +184,16 @@ nav .drop-down {
     opacity: 32%;
 }
 
+/* LOAD MORE */
+
+.load-more:hover {
+    background: linear-gradient(#000000, #29769d);
+}
+
+.load-more a:hover{
+    color: var(--white);
+}
+
 /* -------------------PRODUCT LISTING-------------------*/
 
 .listing-gallery {
