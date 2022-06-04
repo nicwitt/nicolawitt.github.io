@@ -12,27 +12,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
+    <!-- <script>
         $(document).ready(function () {
 
-            $('#navbar').load("../html/nav-bar.html");
+            $('#navbar').load("html/nav-bar.html");
 
         });
     </script>
     <script>
         $(document).ready(function () {
 
-            $('#footer').load("../html/footer.html");
+            $('#footer').load("html/footer.html");
 
         });
     </script>
     <script>
         $(document).ready(function () {
 
-            $('#sidenav').load("../html/side-menu.html");
+            $('#sidenav').load("html/side-menu.html");
 
         });
-    </script>
+    </script> -->
     <title>Home</title>
 </head>
 
@@ -40,11 +40,143 @@
 
     <!-- ----------------------NAVBAR----------------------- -->
 
-    <div id="navbar"></div>
+    <!-- <div id="navbar"></div> -->
+
+    <!-- ------------TOP NAV W/ LOGO------------ -->
+    <nav>
+        <div class="condensed-logo">
+            <a href="/index.html"><img src="/images/logo-condensed.png" alt="logo"></a>
+        </div>
+        <div class="topnav">
+            <div class="nav-left">
+                <span class="topnav-left" style="cursor:pointer" onclick="openNav()">
+                    <a href="#"><u>MENU</u></a></span>
+            </div>
+
+            <div class="logo">
+                <a href="/index.html" class="active"><img src="/images/nav-logo.png" alt=logo class="logo"></a>
+            </div>
+
+            <div class="nav-right">
+                <div class="search-container search-nav">
+                    <input type="text" placeholder="SEARCH" name="search">
+                    <a href="#">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </a>
+                </div>
+                <a href="#" class="search-visible"><u>SEARCH</u></a>
+                <a href="/html/shopping-cart.html"><u>CART</u></a>
+            </div>
+        </div>
+
+        <!-- ------------TOP NAV W/ DROP-DOWNS------------ -->
+        <div class="bottom-nav">
+
+            <ul class="dropdown-categories">
+                <li class="dropdown-trigger"><a class="dropdown" href="/html/product-page.html">GUITARS<ion-icon
+                            name="chevron-down-outline"></ion-icon></a>
+                    <!-- DROP-DOWN CATEGORIES ON HOVER -->
+                    <ul class="dropdown-content">
+                        <li><a href="/html/product-page.html">ELECTRIC GUITARS <ion-icon name="chevron-forward-outline">
+                                </ion-icon></a></li>
+                        <li><a href="#">ACCOUSTIC GUITARS<ion-icon name="chevron-forward-outline"></ion-icon></a></li>
+                        <li><a href="#">BASS GUITARS<ion-icon name="chevron-forward-outline"></ion-icon></a></li>
+                        <li><a href="#">FOLK INSTRUMENTS<ion-icon name="chevron-forward-outline"></ion-icon></a></li>
+                        <li><a href="#">STRINGS<ion-icon name="chevron-forward-outline"></ion-icon></a></li>
+                    </ul>
+                <li><a class="dropdown" href="#">DRUMS<ion-icon name="chevron-down-outline"></ion-icon></a></li>
+                <li><a class="dropdown" href="#">LIVE SOUND<ion-icon name="chevron-down-outline"></ion-icon></a>
+                </li>
+                <li><a class="dropdown" href="#">STUDIO<ion-icon name="chevron-down-outline"></ion-icon></a></li>
+                <li><a class="dropdown" href="#">KEYBOARD<ion-icon name="chevron-down-outline"></ion-icon></a></li>
+                <li><a class="dropdown" href="#">SHEET MUSIC<ion-icon name="chevron-down-outline"></ion-icon></a>
+                </li>
+                <li><a class="dropdown" href="#">ACCESSORIES<ion-icon name="chevron-down-outline"></ion-icon></a>
+                </li>
+        </div>
+    </nav>
 
     <!-- ----------------------SIDENAV----------------------- -->
 
-    <div id="sidenav"></div>
+    <!-- <div id="sidenav"></div> -->
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-regular fa-xmark"
+                style="font-size: 1.5em; color:white;"></i></a>
+
+        <!-- ----------------------SIDENAV----------------------- -->
+        <div class="sidenav-top">
+            <hr>
+            <ul>
+                <li><a class="shop-dropdown-parent" href="#">Shop<i class="fa-regular fa-plus"></i></a></li>
+                
+                <!-- SHOP DROP-DOWN ON CLICK -->
+                <ul class="shop-dropdown-child">
+                    <li><a href="product-page.html">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>Guitars
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>Drums
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>Live Sound
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>Studio
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>Keyboards
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>Sheet Music
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>Accessories
+                        </a></li>
+                </ul>
+                </li>
+                <hr>
+                <!-- VISIT US & REVIEWS -->
+                <li><a href="#">Visit Us</a></li>
+                <hr>
+                <li><a href="#">Reviews</a></li>
+                <hr>
+            </ul>
+        </div>
+        <!-- ----------------------SIDE NAV CENTER CONTENT----------------------- -->
+
+        <ul class="cluster-one">
+            <li><a href="#">Freight</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+
+        <ul class="cluster-two">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Create Account</a></li>
+        </ul>
+
+        <!-- ----------------------SEARCH FUNCTION----------------------- -->
+
+        <div class="search-container">
+            <input type="text" placeholder="Search.." name="search">
+            <a href="#">
+                <ion-icon name="search-outline"></ion-icon>
+            </a>
+        </div>
+
+        <hr>
+
+        <!-- ----------------------SOCIALS----------------------- -->
+
+        <ul class="sidenav-socials">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </div>
 
 
     <!-- ----------------------HERO BANNER----------------------- -->
@@ -211,7 +343,8 @@
 
                 <a href="#">
                     <ul class="product-tile tile-container">
-                        <li class="product-tile-img"><img src="/images/American-Professional.png" alt="electricguitar"></li>
+                        <li class="product-tile-img"><img src="/images/American-Professional.png" alt="electricguitar">
+                        </li>
                         <div class="colour-dot-wrap">
                             <div class="colour-dot dot-light-blue"></div>
                             <div class="colour-dot dot-cream"></div>
@@ -245,7 +378,8 @@
 
                 <a href="#">
                     <ul class="product-tile tile-container">
-                        <li class="product-tile-img"> <img src="/images/1Les-Paul-Classic.png" alt="electricguitar"></li>
+                        <li class="product-tile-img"> <img src="/images/1Les-Paul-Classic.png" alt="electricguitar">
+                        </li>
                         <div class="colour-dot-wrap">
                             <div class="colour-dot dot-dark-dark-blue"></div>
                             <div class="colour-dot dot-dark-blue"></div>
@@ -281,7 +415,8 @@
 
                 <a href="#">
                     <ul class="product-tile tile-container">
-                        <li class="product-tile-img"> <img src="/images/Antique-Victorian.png" alt="electricguitar"></li>
+                        <li class="product-tile-img"> <img src="/images/Antique-Victorian.png" alt="electricguitar">
+                        </li>
                         <div class="colour-dot-wrap">
                             <div class="colour-dot dot-light-blue"></div>
                         </div>
