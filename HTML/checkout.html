@@ -38,13 +38,15 @@
     <!-- ----------------------CHECKOUT CONTAINER----------------------- -->
 
     <div class="checkout-container">
-            <div class="breadcrumbs checkout-breadcrumbs">
-                <a href="shopping-cart.html" class="previous-page"><h3>CART</h3><ion-icon name="chevron-forward-outline"></ion-icon></a> 
-                <h3 class="current-page">CHECKOUT</h3>
-            </div>
+        <div class="breadcrumbs checkout-breadcrumbs">
+            <h3 class="previous-page"><a href="shopping-cart.html">CART</a>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </h3>
+            <h3 class="current-page">CHECKOUT</h3>
+        </div>
 
         <!-- SHIPPING FORM -->
-        <form action="payment.html" method="POST">
+        <form action="payment.html">
             <div class="shipping-details">
                 <h3 class="shipping-details-header">SHIP TO</h3>
                 <input class="form-input" type="text" placeholder="Full Name">
@@ -72,14 +74,19 @@
                 <input type="radio" id="credit-card" name="payment-method" value="CREDIT-CARD">
                 <label for="payment-preference">Credit Card</label><br>
                 <input type="radio" id="paypal" name="payment-method" value="PAYPAL">
-                <label for="payment-preference">Paypal</label><i class="fa-regular fa-arrow-up-right-from-square"></i><br>
+                <label for="payment-preference">Paypal</label><i
+                    class="fa-regular fa-arrow-up-right-from-square"></i><br>
                 <input type="radio" id="afterpay" name="payment-method" value="AFTERPAY">
-                <label for="payment-preference">Afterpay</label><i class="fa-regular fa-arrow-up-right-from-square"></i><br>
+                <label for="payment-preference">Afterpay</label><i
+                    class="fa-regular fa-arrow-up-right-from-square"></i><br>
                 <input type="radio" id="zippay" name="payment-method" value="ZIPPAY">
-                <label for="payment-preference">ZipPay</label><i class="fa-regular fa-arrow-up-right-from-square"></i><br>
+                <label for="payment-preference">ZipPay</label><i
+                    class="fa-regular fa-arrow-up-right-from-square"></i><br>
             </div>
 
             <!-- SUBMIT BUTTON -->
+            <!-- <a class=submit-button href="payment.html">CONFIRM PAYMENT</a> -->
+
             <button class=submit-button type="submit" value="submit">CONFIRM PAYMENT</button>
         </form>
     </div>
@@ -135,7 +142,7 @@
                 <li>$2,790.00</li>
             </ul>
         </div>
-         <!-- ORDER SUMMARY FOOTER -->
+        <!-- ORDER SUMMARY FOOTER -->
         <div class="checkout-summary-footer">
             <ul class="order-summary--title">
                 <li>SHIPPING</li>

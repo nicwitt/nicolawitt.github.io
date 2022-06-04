@@ -21,28 +21,49 @@
 </head>
 
 <body>
-<!-- ----------------------SIDENAV----------------------- -->
+    <!-- ----------------------SIDENAV----------------------- -->
 
-<div id="sidenav"></div>
+    <div id="sidenav"></div>
 
-<!-- ------------TOP NAV W/ LOGO------------ -->
+    <!-- ------------CONDENSED NAV------------ -->
+
     <nav id="nav-condensed">
-        <div class="condensed-logo">
-            <a href="/index.html"><img src="/images/logo-condensed.png" alt="logo"></a>
+        <div class="condensed-nav">
+            <div class="condensed-left">
+                <a href="/index.html"><img src="/images/logo-condensed.png" alt="logo"></a>
+                <a href="#"><ion-icon name="menu-outline" style="font-size: 2em" onclick="openNav()"></ion-icon></a>
+            </div>
+            <div class="condensed-right">
+                <a href="#">
+                    <ion-icon id=search name="search-outline" style="font-size: 1.5em"></ion-icon>
+                </a>
+                <a href="/html/shopping-cart.html">
+                    <ion-icon name="cart-outline" style="font-size: 1.5em"></ion-icon>
+                </a>
+            </div>
         </div>
+
+
+    <!-- -----EXPANDED NAV -------->
+    
         <div class="topnav">
             <div class="nav-left">
                 <span class="topnav-left" style="cursor:pointer" onclick="openNav()">
-                <a href="#"><u>MENU</u></a></span>
+                    <a href="#"><u>MENU</u></a></span>
             </div>
 
             <div class="logo">
                 <a href="/index.html" class="active"><img src="/images/nav-logo.png" alt=logo class="logo"></a>
             </div>
-
             <div class="nav-right">
-                <a href="#"><u>SEARCH</u></a>
-                <a href="shopping-cart.html"><u>CART</u></a>
+                <div id="mySearch" class="search-container search-nav">
+                    <input type="text" placeholder="SEARCH" name="search">
+                    <a href="#">
+                        <ion-icon id=search-icon onclick="closeSearch()" name="search-outline"></ion-icon>
+                    </a>
+                </div>
+                <a href="#" id="search-visible" onclick="openSearch()"><u>SEARCH</u></a>
+                <a href="/html/shopping-cart.html"><u>CART</u></a>
             </div>
         </div>
     </nav>

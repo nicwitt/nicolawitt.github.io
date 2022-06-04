@@ -21,8 +21,12 @@
         display: none;
     }
 
-    .breadcrumbs .previous-page ion-icon {
+    .breadcrumbs .previous-page:not(:first-child) ion-icon {
         display: none;
+    }
+
+    .breadcrumbs h3 a{
+        font-size: var(--s-text);
     }
 }
 
@@ -307,6 +311,53 @@
     .order-summary-container {
         display: none;
     }
+
+    .checkout-breadcrumbs{
+        margin-top: 6em;
+    }
+
+    form h3{
+        font-size: var(--nav-text);
+    }
+
+    form input[type="text"]{
+        font-size: var(--small-text);
+    }
+
+    form label{
+        font-size: var(--small-text);
+    }
+
+    .submit-button{
+        font-size: var(--regular-text);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .order-summary-container {
+        display: none;
+    }
+
+    .checkout-container {
+        padding: 1em 1em 2em 1em;
+        max-width: 100%;
+    }
+}
+
+/* ----CHECKOUT CONFIRMATION------ */
+
+@media screen and (max-width: 640px) {
+.confirmation-container h2{
+    font-size: var(--l-text);
+}
+
+.confirmation-container p{
+    font-size: var(--regular-text);
+}
+
+.bottom-cluster a{
+    font-size: var(--regular-text);
+}
 }
 
 /* -------------------------------IPAD DISPLAY----------------------------- */
@@ -330,8 +381,6 @@
         margin-top: -3em;
     }
 }
-
-/* ---------------NAV BAR--------------*/
 
 @media screen and (max-width: 1040px) {
     .dropdown-categories a {

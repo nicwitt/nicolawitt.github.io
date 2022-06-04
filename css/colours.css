@@ -101,7 +101,7 @@ nav .drop-down {
     border-bottom: 1px solid white;
 }
 
-.previous-page {
+.previous-page a{
     color: var(--grey);
 }
 
@@ -271,7 +271,7 @@ nav .drop-down {
     background: var(--black);
 }
 
-button[type=submit] {
+.submit-button{
     background-color: var(--myBlueDark);
     color: var(--white);
 }

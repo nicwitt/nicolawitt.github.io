@@ -71,6 +71,10 @@ label{
     font-size: var(--regular-text);
 }
 
+.previous-page a{
+    font-size: var(--l-text);
+}
+
 /* -------------------NAVBAR------------------- */
 
 
