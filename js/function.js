@@ -1,4 +1,18 @@
-// ----------------CONDENSED NAV BAR------------------
+// ----------------NAV BAR------------------
+
+function openSearch() {
+  document.getElementById("mySearch").style.width = "20vw";
+  document.getElementById("search-icon").style.transform ="scale(1)"
+  document.getElementById("search-visible").style.transform="scale(0)";
+}
+
+function closeSearch() {
+  document.getElementById("mySearch").style.width = "0";
+  document.getElementById("search-icon").style.transform = "display:none";
+  document.getElementById("search-visible").style.transform = "scale(1)";
+
+
+}
 
 
 // ----------------SIDE NAV------------------

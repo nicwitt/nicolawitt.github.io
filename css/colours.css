@@ -3,9 +3,9 @@
     --white: white;
     --grey: #9F9F9F;
     --black: black;
-    --myBlueLight: #2F7493; 
+    --myBlueLight: #2F7493;
     --myBlueDark: #0F3A43;
-    --dot-dark-dark-blue: #121C2F; 
+    --dot-dark-dark-blue: #121C2F;
     --dot-dark-blue: #2F7493;
     --dot-light-blue: #51AFDB;
     --dot-olive: #77774B;
@@ -19,20 +19,20 @@
 }
 
 /* -------------------GENERAL-------------------*/
-body{
-    background: linear-gradient(120deg, rgba(0,0,0,1) 0%, rgba(6,25,29,1) 77%, rgba(19,85,99,1) 92%, rgba(34,150,175,1) 100%) !important;
+body {
+    background: linear-gradient(120deg, rgba(0, 0, 0, 1) 0%, rgba(6, 25, 29, 1) 77%, rgba(19, 85, 99, 1) 92%, rgba(34, 150, 175, 1) 100%) !important;
     color: var(--white);
 }
 
-a:hover{
+a:hover {
     color: var(--myBlueLight);
 }
 
-.grey{
+.grey {
     color: var(--grey);
 }
 
-.bg-gradient:hover{
+.bg-gradient:hover {
     background: linear-gradient(#000000, #29769d);
     color: var(--white);
 }
@@ -40,42 +40,45 @@ a:hover{
 /* -------------------NAVBAR-------------------*/
 
 /* NAVMAIN */
-nav{
-    background: linear-gradient(180deg, rgba(0,0,0,1) 58%, rgba(0,0,0,0.8057598039215687) 100%);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+nav {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 58%, rgba(0, 0, 0, 0.8057598039215687) 100%);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-nav a{
+nav a {
     color: var(--white);
 }
 
 
 /* NAV DROPDOWN */
-nav .drop-down{
+nav .drop-down {
     background-color: black;
     opacity: 70%;
 }
 
-.dropdown-content{
-    background: linear-gradient(rgba(0,0,0,0.8057598039215687) 58%, rgb(0, 0, 0) 100%);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+.dropdown-content {
+    background: linear-gradient(rgba(0, 0, 0, 0.8057598039215687) 58%, rgb(0, 0, 0) 100%);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* -------------------SIDENAV-------------------*/
 
-.sidenav{
-    background: linear-gradient(120deg, rgba(0,0,0,1) 0%, rgba(6,25,29,1) 77%, rgba(19,85,99,1) 92%, rgba(34,150,175,1) 100%) !important;
+.sidenav {
+    background: linear-gradient(120deg, rgba(0, 0, 0, 1) 0%, rgba(6, 25, 29, 1) 77%, rgba(19, 85, 99, 1) 92%, rgba(34, 150, 175, 1) 100%) !important;
 }
 
 .search-container input[type=text] {
-    border-bottom: 1px solid white;
     background-color: #00000000;
     color: var(--white);
-  }
+}
 
-/* -------------------HOME-------------------*/   
+.search-side input[type=text] {
+    border-bottom: 1px solid white;
+}
 
-.tile-container:hover{
+/* -------------------HOME-------------------*/
+
+.tile-container:hover {
     background: linear-gradient(#000000, #29769d);
     color: var(--white);
 }
@@ -93,7 +96,7 @@ nav .drop-down{
 /* -------------------PRODUCT PAGE-------------------*/
 
 /* BREADCRUMBS */
-.breadcrumbs{
+.breadcrumbs {
     border-top: 1px solid white;
     border-bottom: 1px solid white;
 }
@@ -102,140 +105,140 @@ nav .drop-down{
     color: var(--grey);
 }
 
-.previous-page a:hover{
+.previous-page a:hover {
     color: var(--myBlueLight);
 }
 
 /* FILTER DOTS */
 
-.dot-dark-dark-blue{
+.dot-dark-dark-blue {
     background-color: var(--dot-dark-dark-blue);
-    
+
 }
 
-.dot-dark-blue{
+.dot-dark-blue {
     background-color: var(--dot-dark-blue);
 }
 
-.dot-light-blue{
+.dot-light-blue {
     background-color: var(--dot-light-blue);
 }
 
-.dot-olive{
+.dot-olive {
     background-color: var(--dot-olive);
 }
 
-.dot-cream{
+.dot-cream {
     background-color: var(--dot-cream);
 }
 
-.dot-grey{
+.dot-grey {
     background-color: var(--dot-grey);
 }
 
-.dot-purple{
+.dot-purple {
     background-color: var(--dot-purple);
 }
 
-.dot-green{
+.dot-green {
     background-color: var(--dot-green);
 }
 
-.dot-aqua{
+.dot-aqua {
     background-color: var(--dot-aqua);
 }
 
-.dot-orange{
+.dot-orange {
     background-color: var(--dot-orange);
 }
 
-.dot-peach{
+.dot-peach {
     background-color: var(--dot-peach);
 }
 
-.dot-white{
+.dot-white {
     background-color: var(--white);
 }
 
 
 /* PHOTO GALLERY */
 
-.product-gallery{
+.product-gallery {
     background: var(--black);
 }
 
 .product-gallery:hover {
     background: linear-gradient(#000000, #29769d);
     color: var(--white);
-}  
+}
 
 /* QUICK VIEW ANIMATION */
-.quick-view a{
+.quick-view a {
     color: var(--black);
 }
 
 /* SOLD OUT */
 
-.sold-out{
+.sold-out {
     /* background: var(--myBlueLight); */
     opacity: 32%;
 }
 
 /* -------------------PRODUCT LISTING-------------------*/
 
-.listing-gallery{
-    background: rgb(55,140,180);
-    background: radial-gradient(circle, rgba(55,140,180,1) 0%, rgba(39,95,121,1) 21%, rgba(0,0,0,1) 77%); 
-    background-position: -130px;   
+.listing-gallery {
+    background: rgb(55, 140, 180);
+    background: radial-gradient(circle, rgba(55, 140, 180, 1) 0%, rgba(39, 95, 121, 1) 21%, rgba(0, 0, 0, 1) 77%);
+    background-position: -130px;
 }
 
-.listing-scroll img{
+.listing-scroll img {
     background: var(--black);
     opacity: 60%;
 }
 
-.listing-scroll img:hover{
+.listing-scroll img:hover {
     background: linear-gradient(#000000, #29769d);
     opacity: 100%;
 }
 
-.buttons-tile{
+.buttons-tile {
     background: var(--black);
 }
 
-.quantity-listing{
+.quantity-listing {
     background: var(--black);
 }
 
-.buttons-tile:hover{
+.buttons-tile:hover {
     background: linear-gradient(#000000, #29769d);
     color: var(--white);
 }
 
-.recommend-tile{
+.recommend-tile {
     background: var(--black);
 }
 
-.recommend-tile:hover{
+.recommend-tile:hover {
     background: linear-gradient(#000000, #29769d);
     color: var(--white);
 }
 
 
 /* -------------------ADD TO CART-------------------*/
-.add-to-cart{
+.add-to-cart {
     background-color: black;
 }
 
-.cart-add-brand{
+.cart-add-brand {
     color: var(--grey);
 }
 
-.dot-border{
+.dot-border {
     border: 2px solid white;
 }
 
-.cart-add-buttons a:hover{
+.cart-add-buttons a:hover {
     background: linear-gradient(#000000, #29769d);
     color: var(--white);
 }
@@ -248,51 +251,51 @@ nav .drop-down{
     background-color: black;
 }
 
-.checkout-product-brand{
+.checkout-product-brand {
     color: var(--grey);
 }
 
-.checkout-button{
+.checkout-button {
     background: var(--black);
 }
 
-.checkout-button:hover{
+.checkout-button:hover {
     background: linear-gradient(#000000, #29769d);
     color: var(--white);
 }
 
 /* -------------------CHECKOUT-------------------*/
 
-.order-summary-container{
+.order-summary-container {
     border: 1.5px solid white;
     background: var(--black);
 }
 
-button[type=submit]{
+button[type=submit] {
     background-color: var(--myBlueDark);
     color: var(--white);
-  }
+}
 
-  button[type=submit]:hover{
+button[type=submit]:hover {
     background: linear-gradient(#000000, #29769d);
-  }
+}
 
-  /* INPUT FORM */
+/* INPUT FORM */
 .form-input {
     background-color: #00000000;
     color: var(--white);
-  }
+}
 
 /* -------------------CONFIRMATION MESSAGE-------------------*/
 
-.confirmation-container a{
+.confirmation-container a {
     color: var(--myBlueLight);
 }
 
 /* -------------------FOOTER-------------------*/
 
 
-.footer{
+.footer {
     background-color: black;
 }
 
@@ -300,8 +303,8 @@ button[type=submit]{
     border-bottom: 1px solid white;
     background-color: #00000000;
     color: var(--white);
-  }
+}
 
-  .email-container a ion-icon{
+.email-container a ion-icon {
     color: var(--grey);
 }

@@ -27,7 +27,7 @@
 }
 
 /* ---------------NAV BAR--------------*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
 
     .topnav a {
         float: none;
@@ -39,12 +39,16 @@
         display: none;
     }
 
-    .condensed-logo img {
+    .condensed-nav {
         transform: scale(1);
     }
 
     .nav-left {
         padding-left: 4em;
+    }
+
+    .topnav {
+        display: none;
     }
 
 }
@@ -309,7 +313,7 @@
 
 /* ---------------NAV BAR--------------*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 840px) {
     .dropdown-categories {
         display: none;
     }
@@ -329,7 +333,7 @@
 
 /* ---------------NAV BAR--------------*/
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1040px) {
     .dropdown-categories a {
         font-size: var(--xss-text);
     }
