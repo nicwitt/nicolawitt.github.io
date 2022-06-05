@@ -39,6 +39,14 @@ function closeCart() {
   document.getElementById("myCart").style.width = "0";
 }
 
+function openCartFender() {
+  document.getElementById("myCartFender").style.width = "50vw";
+}
+
+function closeCartFender() {
+  document.getElementById("myCartFender").style.width = "0";
+}
+
 
 // ----------------CHECKOUT VALIDATION------------------
 
@@ -54,6 +62,6 @@ function formValidation(){
     alert("Required Field Misssing");
     return false;
   } else {
-    window.location.href="/html/shipping.html"
+    window.location.href="/html/checkout.html"
   }
 }
