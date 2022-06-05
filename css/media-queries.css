@@ -156,6 +156,21 @@
 
 /* ----------PRODUCT LISTING------------ */
 
+@media screen and (max-width: 400px){
+    .product-scroll-arrows{
+        padding-left: 0em;
+        width: 85vw !important;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    .product-scroll-arrows{
+        width: 87vw;
+        height: 42vw;
+    }
+}
+
 @media screen and (max-width: 600px) {
 
     .listing-scroll {
@@ -205,6 +220,10 @@
         display: none;
     }
 
+    .product-scroll-arrows{
+        transform: scale(1);
+    }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -237,8 +256,13 @@
     }
 
     .cart-add-buttons {
-        margin-left: 0.6em;
+        margin-left: 0em;
     }
+
+    .quantity{
+        padding: 0.2em;
+    }
+
 }
 
 @media screen and (max-width: 600px) {

@@ -11,7 +11,6 @@ function closeSearch() {
   document.getElementById("search-icon").style.width = "0";
   document.getElementById("search-visible").style.transform = "scale(1)";
 
-
 }
 
 

@@ -671,6 +671,18 @@ input[type=checkbox] {
     padding: 1.7em 1.5em 0 2em;
 }
 
+.product-scroll-arrows{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0.5em;
+    width: 88vw;
+    height: 36vw;
+    align-items: center;
+    transform: scale(0);
+}
+
 /* PRODUCT PHOTOS CONTAINER */
 
 .listing-gallery {
@@ -754,6 +766,12 @@ input[type=checkbox] {
 
 .dot-border-black {
     border: 1px solid black;
+}
+
+.product-seemore{
+    position: absolute;
+    transform: translate(45vw, -8vw);
+    margin-bottom: 0.5em;
 }
 
 /* ACTIONS BUTTONS */
@@ -1093,6 +1111,10 @@ input[type=checkbox] {
     margin-bottom: 0.5em
 }
 
+.shipping-details {
+    padding-bottom: 23vw;
+}
+
 /* INPUT FORM */
 .form-input {
     float: left;
@@ -1104,6 +1126,23 @@ input[type=checkbox] {
 
 .form-input:hover {
     border: 1px solid var(--white);
+}
+
+/* PAYMENT METHOD RADIO BOXES */
+
+.payment-payment-method i{
+    padding-left: 0.5em;
+    font-size: 1.2em;
+}
+
+.checkout-container input[type="radio"]{
+    height: 15px;
+    width: 15px;
+    text-align: middle;
+}
+
+.checkout-container label{
+    line-height: 1.5em;
 }
 
 /* CONFIRM PAYMENT SUBMIT BUTTON */
