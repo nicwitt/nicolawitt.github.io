@@ -768,10 +768,16 @@ input[type=checkbox] {
     border: 1px solid black;
 }
 
-.product-seemore{
+/* SEE MORE */
+
+.product-seemore a{
     position: absolute;
-    transform: translate(45vw, -8vw);
+    transform: translate(40vw, -7.5vw);
     margin-bottom: 0.5em;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    display: none;
 }
 
 /* ACTIONS BUTTONS */

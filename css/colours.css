@@ -261,6 +261,14 @@ nav .drop-down {
     color: var(--white);
 }
 
+.product-seemore a{
+    color: var(--grey);
+}
+
+.product-seemore a:hover{
+    color: var(--white);
+}
+
 
 /* -------------------ADD TO CART-------------------*/
 .add-to-cart {
