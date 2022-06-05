@@ -105,8 +105,28 @@ nav .drop-down {
     color: var(--grey);
 }
 
+.previous-page h3{
+    color: var(--grey);
+}
+
 .previous-page a:hover {
     color: var(--myBlueLight);
+}
+
+/* FILTER COLLAPSE */
+
+.filter-collapse p{
+    color: var(--grey);
+}
+
+.filter-collapse-icons ion-icon:hover{
+    color: var(--myBlueLight);
+    cursor: pointer;
+}
+
+.filter-collapse-icons i:hover{
+    color: var(--myBlueLight);
+    cursor: pointer;
 }
 
 /* FILTER DOTS */

@@ -88,6 +88,14 @@
     .quick-view {
         margin-bottom: 3em;
     }
+
+    .filter-collapse p{
+        font-size: var(--small-text);
+    }
+
+    .filter-collapse-icons{
+        font-size: 0.9em;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -97,6 +105,12 @@
 
     .load-more a{
         font-size: var(--small-text);
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .product-page-container{
+        padding-top: 5.5em;
     }
 }
 
@@ -118,6 +132,18 @@
         width: 3.8em;
         padding: 0.5em;
     }
+
+    .collapse-wrap{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .filter-title{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+}
 }
 
 /* -------------HOME------------ */
@@ -300,8 +326,8 @@
 
     .checkout-scroll h2 {
         margin-bottom: 4em;
-        margin-left: -1em;
     }
+
 
     .checkout-button {
         margin-top: 0.5em;
